@@ -45,8 +45,7 @@
   flex: 50%;
   align-items: center;
   justify-content: flex-end;
-  margin-right: 40px;
 }
-.header .wrapper .right .icon-pj {
-  margin-right: 28px;
+.header .wrapper .right img {
+  margin-right: 15%;
 }/*# sourceMappingURL=header.css.map */
