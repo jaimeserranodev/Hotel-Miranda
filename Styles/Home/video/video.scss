@@ -1,0 +1,79 @@
+.video{
+    .container{
+        margin-top: 100px;
+        height: 876px;
+        width: 375px;
+        background-color:#222222;
+        display: flex;
+        flex-direction: column;
+
+        h3{
+            margin-top: 64px;
+            margin-left: 24px;
+            font-family: 'Archivo', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 15px;
+            letter-spacing: 2.799999952316284px;
+            text-align: left;
+            color: #BDAC8D;
+
+        }
+        h1{
+            margin-left: 20px;
+            margin-top: 32px;
+            font-family: 'Old Standard TT', serif;
+            font-size: 56px;
+            font-weight: 400;
+            line-height: 60px;
+            letter-spacing: -1.2000000476837158px;
+            text-align: left;
+            color: #FFFFFF;
+            height: 180px;
+            width: 335px;
+            left: 20px;
+            top: 111px;
+
+
+
+        }
+        p{
+            margin-top: 16px;
+            margin-left: 20px;
+            font-family: 'Archivo', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0px;
+            text-align: left;
+            color: #C2C2C2;
+        }
+        div{
+            height: 270px;
+            width: 335px;
+            margin-left: 20px;
+            margin-top: 32px;
+            border-radius: 0px;
+            background-color: #E6E6E6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button{
+            height: 60px;
+            width: 217px;
+            margin-left: 20px;
+            margin-top: 36px;
+            background-color: #BEAD8E;
+            border: none;
+            color: white;
+            font-family: 'Archivo', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 15px;
+            letter-spacing: 2.799999952316284px;
+            margin-bottom: 24px;
+        }
+    }
+}

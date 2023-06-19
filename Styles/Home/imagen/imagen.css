@@ -1,0 +1,15 @@
+.imagen {
+  display: flex;
+  width: 375px;
+  align-items: center;
+  justify-content: center;
+}
+.imagen .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 335px;
+  width: 335px;
+  margin-top: 100px;
+  background-color: #EDEDED;
+}/*# sourceMappingURL=imagen.css.map */

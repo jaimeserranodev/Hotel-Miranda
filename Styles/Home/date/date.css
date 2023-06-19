@@ -1,0 +1,56 @@
+.date .container {
+  width: 375px;
+  height: 354px;
+  background-color: #222222;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.date .container p {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.date .container #myDateInput {
+  width: 200px;
+  padding: 8px;
+  border: none;
+  border-bottom: 3px solid #bead8e;
+  background-color: #222222;
+  color: #bead8e;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+.date .container #myDateInput::-webkit-calendar-picker-indicator {
+  margin-right: 8px;
+  filter: invert(1);
+}
+.date .container #myDateInput[type=date]::-moz-calendar-picker-indicator {
+  margin-right: 8px;
+  filter: invert(1);
+}
+.date button {
+  background-color: #BEAD8E;
+  margin-top: 42px;
+  height: 60px;
+  width: 250px;
+  height: 60px;
+  border-radius: 0px;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 2.7999999523px;
+  text-align: center;
+  color: white;
+}
+.date div {
+  height: 60px;
+  background-color: white;
+  width: 375px;
+}/*# sourceMappingURL=date.css.map */

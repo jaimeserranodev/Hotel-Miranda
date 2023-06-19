@@ -1,0 +1,98 @@
+.rooms {
+  width: 375px;
+  height: 610px;
+}
+.rooms h4 {
+  padding-top: 38px;
+  padding-left: 20px;
+  font-family: "Archivo", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2.7999999523px;
+  text-align: center;
+  color: #777777;
+}
+.rooms h1 {
+  padding-left: 20px;
+  padding-top: 32px;
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2000000477px;
+  text-align: center;
+}
+.rooms .slider {
+  height: 244px;
+  width: 375px;
+  left: 0px;
+  top: 3061px;
+  border-radius: 0px;
+  background-color: gray;
+}
+.rooms .price {
+  height: 225px;
+  width: 375px;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rooms .price div {
+  height: 215px;
+  width: 335px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  margin-top: -40px;
+}
+.rooms .price div h2 {
+  margin-top: 19px;
+  font-family: "Old Standard TT", serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -1.2000000477px;
+  text-align: center;
+}
+.rooms .price div p {
+  margin-top: 12px;
+  margin-left: 24px;
+  height: 100px;
+  width: 287px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #777777;
+}
+.rooms .price div div {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.rooms .price div .precio {
+  font-family: "Archivo", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #BEAD8E;
+}
+.rooms .price div .noche {
+  font-family: "Archivo", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #BEAD8E;
+}/*# sourceMappingURL=rooms.css.map */
