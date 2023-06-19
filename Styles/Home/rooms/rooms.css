@@ -34,7 +34,7 @@
 .rooms .price {
   height: 225px;
   width: 375px;
-  background-color: lightblue;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,10 +89,11 @@
 }
 .rooms .price div .noche {
   font-family: "Archivo", sans-serif;
-  font-size: 13px;
+  font-size: 32px;
   font-weight: 700;
   line-height: 43px;
   letter-spacing: 0px;
   text-align: center;
   color: #BEAD8E;
+  font-size: 13px;
 }/*# sourceMappingURL=rooms.css.map */

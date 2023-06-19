@@ -1,3 +1,5 @@
+
+
 .home{
     display: flex;
     flex-direction: column;
@@ -5,11 +7,10 @@
     padding-left: 20px;
     width: 375px;
     background-color: #333333;
-    height: 531px;
+    
 
     h4{
         margin-top: 75px;
-        
         font-weight: 700;
         font-size: 13px;
         line-height: 18px;
@@ -22,40 +23,36 @@
     h1{
         font-family: 'Old Standard TT', serif;
         font-weight: 400;
-        font-size: 50px;
+        font-size: 56px;
         line-height: 60px;
         letter-spacing: -1.2px;
         color: white;
         margin-top: 40px;
         margin-bottom: 40px;
     }
-
-    .btn-take{
-        height: 60px;
-        width: 217px;
-        background-color: #BEAD8E;
-        color: white;
-        font-family: 'Archivo', sans-serif;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 15px;
-        letter-spacing: 2.799999952316284px;
-        margin-bottom: 24px;
-
+    div{
+        height: 49px;
+        width: 156px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: right;
+        margin-right: 0;
+        margin-left: 56%;
     }
-
-    .btn-learn{
+    span{
         font-family: 'Archivo', sans-serif;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 700;
-        line-height: 15px;
-        letter-spacing: 2.799999952316284px;
-        color: white;
-        background-color: #333333;
-        border: 2px solid rgba(255, 255, 255, 0.33);
-
-        height: 60px;
-        width: 217px;
-
+        line-height: 17px;
+        letter-spacing: -0.47999998927116394px;
+        text-align: left;
+        white-space: break-spaces;
+        color: #222222;
+        
+    }
+    #about{
+        color: #BEAD8E;
     }
 }

@@ -1,14 +1,16 @@
+@import "../../variables";
+
 .date{
     .container{
         width: 375px;
         height: 354px;
-        background-color: #222222;
+        background-color: $color_black;
         padding-left: 20px;
         display: flex;
         flex-direction: column;
 
         p{
-            font-family: 'Roboto', sans-serif;
+            font-family: $font_descripcion;
             color: white;
             font-style: normal;
             font-weight: 700;
@@ -43,19 +45,9 @@
           }
         }
         button{
-            background-color: #BEAD8E;
+          @include button;
             margin-top: 42px;
-            height: 60px;
             width: 250px;
-            height: 60px;
-            border-radius: 0px;
-            font-family: 'Archivo', sans-serif;
-            font-size: 14px;
-            font-weight: 700;
-            line-height: 15px;
-            letter-spacing: 2.799999952316284px;
-            text-align: center;
-            color: white;
         }
         div{
             height: 60px;

@@ -35,19 +35,18 @@
   filter: invert(1);
 }
 .date button {
+  height: 60px;
+  width: 217px;
   background-color: #BEAD8E;
-  margin-top: 42px;
-  height: 60px;
-  width: 250px;
-  height: 60px;
-  border-radius: 0px;
+  color: white;
   font-family: "Archivo", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 15px;
   letter-spacing: 2.7999999523px;
-  text-align: center;
-  color: white;
+  margin-bottom: 24px;
+  margin-top: 42px;
+  width: 250px;
 }
 .date div {
   height: 60px;

@@ -1,0 +1,21 @@
+.video {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+.video .video_container {
+  height: 186px;
+  width: 335px;
+}
+.video p {
+  margin: 6% 3%;
+  font-family: "Old Standard TT";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: -1.1599999666px;
+  text-align: center;
+}/*# sourceMappingURL=video.css.map */
