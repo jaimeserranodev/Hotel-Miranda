@@ -1,3 +1,5 @@
+@import "../../variables";
+
 .video{
     width: 375px;
     display: flex;
@@ -17,6 +19,47 @@
         line-height: 40px;
         letter-spacing: -1.159999966621399px;
         text-align: center;
-
+    }
+    .iconos{
+        width: 375px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .cajas{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex: 40%;
+            height: 158px;
+            width: 158px;
+            flex-wrap: wrap;
+            padding: 10px;
+            img{
+                height: 50.560001373291016px;
+                width: 58.460044860839844px;
+            }
+            i{
+                font-size: 50px;
+            }
+            p{
+                font-family: $font_button;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 14px;
+                letter-spacing: 2.4000000953674316px;
+                text-align: center;
+                color: #222222;
+            }
+        }
+        .cajas:hover{
+            background-color: #BEAD8E;
+            transition: 1s ease;
+            p{
+                color: #FFFFFF;
+            }
+        }
     }
 }

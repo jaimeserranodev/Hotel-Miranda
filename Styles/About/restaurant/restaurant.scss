@@ -1,0 +1,21 @@
+@import "../../variables";
+
+.restaurant{
+    width: 375px;
+    h4{
+        @include titulo_block;
+    }
+    h1{
+        @include titulo_big;
+        text-align: left;
+        font-size: 40px;
+    }
+    p{
+        @include parrafo_gris;
+    }
+    button{
+        @include button;
+        border: none;
+        margin-left: 20px;
+    }
+}

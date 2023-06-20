@@ -18,4 +18,46 @@
   line-height: 40px;
   letter-spacing: -1.1599999666px;
   text-align: center;
+}
+.video .iconos {
+  width: 375px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.video .iconos .cajas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 40%;
+  height: 158px;
+  width: 158px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.video .iconos .cajas img {
+  height: 50.5600013733px;
+  width: 58.4600448608px;
+}
+.video .iconos .cajas i {
+  font-size: 50px;
+}
+.video .iconos .cajas p {
+  font-family: "Archivo", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 2.4000000954px;
+  text-align: center;
+  color: #222222;
+}
+.video .iconos .cajas:hover {
+  background-color: #BEAD8E;
+  transition: 1s ease;
+}
+.video .iconos .cajas:hover p {
+  color: #FFFFFF;
 }/*# sourceMappingURL=video.css.map */

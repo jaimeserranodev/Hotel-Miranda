@@ -1,0 +1,56 @@
+.counter {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 60px;
+}
+.counter h4 {
+  padding-top: 38px;
+  padding-left: 20px;
+  font-family: "Archivo", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2.7999999523px;
+  text-align: left;
+  color: #777777;
+  text-align: left;
+}
+.counter h1 {
+  padding-left: 20px;
+  padding-top: 20px;
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2000000477px;
+  text-align: center;
+  padding-left: 0;
+  text-align: left;
+  margin-left: 20px;
+}
+.counter .counter_container {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.counter .counter_container img {
+  margin-left: 20px;
+}
+.counter .counter_container div p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #777777;
+}
+.counter #imagen {
+  height: 230.0333404541px;
+  width: 335px;
+  margin-left: 20px;
+  margin-top: 30px;
+}/*# sourceMappingURL=counter.css.map */

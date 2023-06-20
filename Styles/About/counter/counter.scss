@@ -1,0 +1,46 @@
+@import "../../variables";
+
+.counter{
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 60px;
+    h4{
+        @include titulo_block;
+        text-align: left;
+    }
+    h1{
+        @include titulo_big;
+        padding-left: 0;
+        text-align: left;
+        margin-left: 20px;
+    }
+    .counter_container{
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        img{
+        margin-left: 20px;
+        }
+        div{
+            p{
+                font-family: $font_descripcion;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: 0px;
+                text-align: left;
+                color: #777777;
+            }
+        }
+    }
+    #imagen{
+        height: 230.03334045410156px;
+        width: 335px;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+}
+    

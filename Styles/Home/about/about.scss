@@ -10,10 +10,7 @@
     justify-content: center;
 }
 
-@mixin img{
-    height: 300px;
-    width: 270px;
-}
+
 
 @mixin div{
     height: 300px;
@@ -52,14 +49,7 @@
             text-align: left;
         }
         p{
-            padding: 32px 20px;
-            font-family: $font_button;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: 0px;
-            text-align: left;
-            color: #777777;
+            @include parrafo_gris;
         }
         button{
             @include button;
