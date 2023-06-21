@@ -1,0 +1,137 @@
+.popular-room {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #222222;
+  width: 375px;
+  margin-top: 40px;
+}
+.popular-room h4 {
+  margin-top: 48px;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 2.7999999523px;
+  text-align: left;
+  color: #BDAC8D;
+}
+.popular-room h1 {
+  padding-left: 20px;
+  padding-top: 20px;
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2000000477px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.8px;
+}
+.popular-room .rooms {
+  width: 375px;
+  height: 550px;
+  margin-bottom: -60px;
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.popular-room .rooms .slider {
+  height: 218px;
+  width: 335px;
+  left: 0px;
+  top: 3061px;
+  border-radius: 0px;
+  background-color: #E9E9E9;
+}
+.popular-room .rooms .menu_iconos {
+  display: flex;
+  z-index: 1;
+  height: 40px;
+  width: 256px;
+  background-color: white;
+  margin-top: -20px;
+  margin-bottom: 30px;
+  padding: 10px;
+  justify-content: space-between;
+}
+.popular-room .rooms .menu_iconos img {
+  padding-right: 10px;
+}
+.popular-room .rooms .price {
+  margin-top: -35px;
+  height: 225px;
+  width: 375px;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popular-room .rooms .price div {
+  height: 215px;
+  width: 335px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  margin-top: -40px;
+}
+.popular-room .rooms .price div h2 {
+  margin-top: 50px;
+  font-family: "Old Standard TT", serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -1.2000000477px;
+  text-align: center;
+}
+.popular-room .rooms .price div p {
+  margin-top: 12px;
+  margin-left: 24px;
+  height: 100px;
+  width: 287px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #777777;
+}
+.popular-room .rooms .price div div {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.popular-room .rooms .price div .precio {
+  font-family: "Archivo", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #BEAD8E;
+  font-size: 16px;
+  line-height: 17.41px;
+  margin-top: -30px;
+}
+.popular-room .rooms .price div .noche {
+  font-family: "Archivo", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #BEAD8E;
+  font-size: 16px;
+  margin-top: -30px;
+  color: #BDBDBD;
+  white-space: break-spaces;
+}/*# sourceMappingURL=popular-room.css.map */

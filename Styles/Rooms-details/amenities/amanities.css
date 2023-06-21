@@ -1,0 +1,114 @@
+.amanities h1 {
+  padding-left: 20px;
+  padding-top: 20px;
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2000000477px;
+  text-align: center;
+  text-align: left;
+}
+.amanities .linea {
+  border-bottom: 1px solid #F1F1F1;
+  width: 335px;
+  margin-left: 20px;
+}
+.amanities div {
+  display: flex;
+  flex-direction: row;
+}
+.amanities div ul {
+  margin-left: 20px;
+  list-style: none;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.amanities div ul li {
+  padding: 5px;
+}
+.amanities div ul li span {
+  padding-top: 38px;
+  padding-left: 20px;
+  font-family: "Archivo", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2.7999999523px;
+  text-align: left;
+  color: #777777;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0px;
+}
+.amanities .founder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 375px;
+}
+.amanities .founder .founder_imagenes {
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.amanities .founder .founder_imagenes #persona {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  color: gray;
+  margin-bottom: 10px;
+}
+.amanities .founder .founder_imagenes #circulo {
+  position: absolute;
+  translate: 60px -60px;
+}
+.amanities .founder .founder_imagenes #check {
+  position: absolute;
+  translate: 60px -60px;
+}
+.amanities .founder h1 {
+  padding-left: 20px;
+  padding-top: 20px;
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2000000477px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.9px;
+}
+.amanities .founder h4 {
+  padding-top: 38px;
+  padding-left: 20px;
+  font-family: "Archivo", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2.7999999523px;
+  text-align: left;
+  color: #777777;
+  color: #BDAC8D;
+  font-size: 14px;
+  line-height: 15px;
+  text-align: center;
+  margin-top: -20px;
+}
+.amanities .founder p {
+  padding: 32px 20px;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #777777;
+  text-align: center;
+  width: 317px;
+  margin-top: -10px;
+}/*# sourceMappingURL=amanities.css.map */

@@ -1,0 +1,117 @@
+@import "../../variables";
+
+.related-rooms{
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    .related-rooms_container{
+        h1{
+            @include titulo_big;
+                font-size: 30px;
+                line-height: 30px;
+                letter-spacing: -0.9px;
+                text-align: left;
+        }
+        .linea{
+            border-bottom: 1px solid #F1F1F1;
+            width: 335px;
+            margin-left: 20px;
+            }
+
+        .rooms{
+            width: 375px;
+            margin-bottom: -60px;
+            margin-top: 48px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .slider{
+                height: 218px;
+                width: 335px;
+                left: 0px;
+                top: 3061px;
+                border-radius: 0px;
+                background-color: #E9E9E9;
+            }
+            .menu_iconos{
+                display: flex;
+
+                height: 40px;
+                width: 256px;
+                background-color: white;
+                margin-top: -20px;
+                margin-bottom: 30px;
+                padding: 10px;
+                justify-content: space-between;
+                img{
+                    padding-right: 10px;
+                }
+            }
+            .price{
+                height: 225px;
+                width: 375px;
+                background-color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                div{
+                    height: 215px;
+                    width: 335px;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #fff;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: -40px;
+                    h2{
+                        margin-top: 19px;
+                        font-family: 'Old Standard TT', serif;
+                        font-size: 28px;
+                        font-weight: 400;
+                        line-height: 36px;
+                        letter-spacing: -1.2000000476837158px;
+                        text-align: center;
+                    }
+                    p{
+                        margin-top: 12px;
+                        margin-left: 24px;
+                        height: 100px;
+                        width: 287px;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        letter-spacing: 0px;
+                        text-align: center;
+                        color: #777777;
+                    }
+                    div{
+                        margin-top: 12px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .precio{
+                        @include precio;
+                        font-size: 16px;
+                        line-height:  17.41px;
+                        margin-top: -30px;
+                    }
+                    .noche{
+                        @include precio;
+                        font-size: 16px;
+                        margin-top: -30px;
+                        color: #BDBDBD;
+                        white-space: break-spaces;
+                    }
+                }
+            }
+        }
+    }
+} 
+
+
+
+

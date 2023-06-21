@@ -1,0 +1,30 @@
+@import "../../variables";
+
+.room{
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    
+    h4{
+        @include titulo_block;
+    }
+    h1{
+        @include titulo_big;
+        font-size: 40px;
+        text-align: left;
+    }
+    .precio{
+        @include precio;
+        margin-left: 20px;
+    }
+    .noche{
+        @include precio;
+        font-size: 13px;
+    }
+    img{
+        height: 214px;
+        width: 335px;
+        margin-left: 20px;
+
+    }
+}

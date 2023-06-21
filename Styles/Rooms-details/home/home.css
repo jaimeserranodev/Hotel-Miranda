@@ -1,0 +1,52 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-left: 20px;
+  width: 375px;
+  background-color: #333333;
+}
+.home h4 {
+  margin-top: 75px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  display: flex;
+  font-family: "Archivo", sans-serif;
+  color: white;
+  letter-spacing: 2.8px;
+}
+.home h1 {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.home div {
+  height: 49px;
+  width: 186px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: right;
+  margin-right: 0;
+  margin-left: 42%;
+}
+.home span {
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: -0.4799999893px;
+  text-align: left;
+  white-space: break-spaces;
+  color: #222222;
+}
+.home #seccion {
+  color: #BEAD8E;
+}/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,70 @@
+@import "../../variables";
+
+.date{
+    .container{
+        width: 375px;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+
+        h4{
+            font-family: $font_button;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 20px;
+            letter-spacing: -0.5400000214576721px;
+            margin-top: 49px;
+            margin-bottom: 35px;
+        }
+
+        span{
+            display: flex;
+            justify-content: start;
+            font-family: $font_descripcion;
+            color: $color_black;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            margin-left: -220px;
+        }
+
+        #myDateInput{
+            width: 290px;
+            padding: 20px;
+            border: none; 
+            background-color: #F8F8F8;
+            color: #777777; 
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        
+        
+        #myDateInput::-webkit-calendar-picker-indicator {
+            
+            margin-right: 27px;
+            font-size: 20px
+            
+        }
+        
+        
+        #myDateInput[type="date"]::-moz-calendar-picker-indicator {
+            margin-right: 27px;
+            font-size: 20px
+        }
+        }
+        button{
+            @include button;
+            margin-top: 42px;
+            width: 290px;
+            border: none;
+        }
+        p{
+            @include parrafo_gris
+        }
+    }
