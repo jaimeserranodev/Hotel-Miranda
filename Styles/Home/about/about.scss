@@ -30,11 +30,11 @@
 }
 
 .about{
-    .container-1{
+    display: flex;
+    .about-container-1{
         width: 375px;
         height: 610px;
         background-color: #F9F9F9;
-
         h4{
             @include titulo_block;
         }
@@ -58,11 +58,12 @@
             }
     }
 
-    .container-2{
+    .about-container-2{
         width: 375px;
         margin-top: -100px;
         .wrapper-1{
             @include wrapper;
+            flex-direction: column-reverse;
             img{
                 @include img;
             }
@@ -143,6 +144,32 @@
                     text-align: center;
                     color: #FFFFFF;
                 }
+            }
+        }
+    }
+}
+
+// VERSION DESKTOP
+@media screen and (min-width: 768px) {
+    .about{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        
+        .about-container-1{
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 152px;
+        }
+
+        .about-container-2{
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+            margin-top: 100px;
+            .wrapper-2{
+                flex-direction: column;
             }
         }
     }

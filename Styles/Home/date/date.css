@@ -1,12 +1,13 @@
-.date .container {
-  width: 375px;
+.date .date-container {
+  width: 100%;
   height: 354px;
   background-color: #222222;
   padding-left: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
-.date .container p {
+.date .date-container .date-container_checkIn p {
   font-family: "Roboto", sans-serif;
   color: white;
   font-style: normal;
@@ -16,7 +17,7 @@
   padding-top: 30px;
   padding-bottom: 20px;
 }
-.date .container #myDateInput {
+.date .date-container .date-container_checkIn #myDateInput {
   width: 200px;
   padding: 8px;
   border: none;
@@ -26,11 +27,11 @@
   font-family: Arial, sans-serif;
   font-size: 14px;
 }
-.date .container #myDateInput::-webkit-calendar-picker-indicator {
+.date .date-container .date-container_checkIn #myDateInput::-webkit-calendar-picker-indicator {
   margin-right: 8px;
   filter: invert(1);
 }
-.date .container #myDateInput[type=date]::-moz-calendar-picker-indicator {
+.date .date-container .date-container_checkIn #myDateInput[type=date]::-moz-calendar-picker-indicator {
   margin-right: 8px;
   filter: invert(1);
 }
@@ -48,8 +49,16 @@
   margin-top: 42px;
   width: 250px;
 }
-.date div {
-  height: 60px;
-  background-color: white;
-  width: 375px;
+
+@media screen and (min-width: 768px) {
+  .date {
+    display: flex;
+    flex-direction: row;
+  }
+  .date .date-container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 152px;
+  }
 }/*# sourceMappingURL=date.css.map */

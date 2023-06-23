@@ -1,57 +1,75 @@
 @import "../../variables";
 
 .date{
-    .container{
-        width: 375px;
+    .date-container{
+        width: 100%;
         height: 354px;
-        background-color: $color_black;
+        background-color: #222222;
         padding-left: 20px;
         display: flex;
         flex-direction: column;
-
+        justify-content: space-between;
+      .date-container_checkIn{
         p{
-            font-family: $font_descripcion;
-            color: white;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 19px;
-            padding-top: 30px;
-            padding-bottom: 20px;
-        }
+          font-family: $font_descripcion;
+          color: white;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          padding-top: 30px;
+          padding-bottom: 20px;
+      }
 
-        #myDateInput{
-            width: 200px;
-            padding: 8px;
-            border: none; 
-            border-bottom: 3px solid #bead8e;
-            background-color: #222222;
-            color: #bead8e; 
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-          }
+      #myDateInput{
+          width: 200px;
+          padding: 8px;
+          border: none; 
+          border-bottom: 3px solid #bead8e;
+          background-color: #222222;
+          color: #bead8e; 
+          font-family: Arial, sans-serif;
+          font-size: 14px;
+        }
+        
+        
+        #myDateInput::-webkit-calendar-picker-indicator {
           
-          
-          #myDateInput::-webkit-calendar-picker-indicator {
-            
-            margin-right: 8px;
-            filter: invert(1);
-          }
-          
-          
-          #myDateInput[type="date"]::-moz-calendar-picker-indicator {
-            margin-right: 8px;
-            filter: invert(1);
-          }
+          margin-right: 8px;
+          filter: invert(1);
+        }
+        
+        
+        #myDateInput[type="date"]::-moz-calendar-picker-indicator {
+          margin-right: 8px;
+          filter: invert(1);
+        }
+      }
+        
         }
         button{
           @include button;
             margin-top: 42px;
             width: 250px;
         }
-        div{
-            height: 60px;
-            background-color: white;
-            width: 375px;
-        }
+        // div{
+        //     height: 60px;
+        //     background-color: white;
+        //     width: 375px;
+        // }
     }
+
+    // VERSION DESKTOP
+@media screen and (min-width: 768px) {
+  .date{
+    display: flex;
+      flex-direction: row;
+      
+      .date-container{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 152px;
+      }
+  }
+}

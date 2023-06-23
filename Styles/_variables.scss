@@ -75,6 +75,24 @@ $color_gray: #777777;
     }
 }
 
+//////////////////////////////////
+
+//BLOQUE INPUT FORMULARIO
+@mixin input_formulario{
+    background-repeat: no-repeat;
+    background-position: 4px center;
+    background-size: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20.9375rem;
+    height: 4.1875rem;
+    margin-top: 30px;
+    background-color: #F8F8F8;
+}
+
+
 //TITULOS
 @mixin titulo_block{
     padding-top: 38px;

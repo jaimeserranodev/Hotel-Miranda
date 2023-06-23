@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
+    <script src="/script.js"></script>
+    <link rel="stylesheet" href="/Styles/Header/header.css">
     <link rel="stylesheet" href="Styles/styles.css">
     <title>Hotel Miranda</title>
 </head>
 <body>
     <header class="header">
         <div class="wrapper">
-            <div class="left">
-                <img class="icon-hamburguesa" src="Img/hamburguesa.png" alt="">
-                <div class="container-h">
-                    <img src="Img/H.png" alt="">
-                </div>
-                <img class="logo" src="Img/Hotel Miranda.png" alt="">
+            <div id="toggle-menu" class="toggle-menu">
+                <img src="/Img/hamburguesa.png" alt="">
             </div>
-
-
+            <div class="left">
+                <img src="/Img/Frame 47.svg" alt="">
+            </div>
             <div class="right">
                 <img class="icon-pj" src="Img/icono-pj.png" alt="">
                 <img class="icon-lupa" src="Img/lupa.png" alt="">
             </div>
         </div>
+        <nav class="main-menu" id="main-menu">
+            <ul class="main-menu__item">
+                <li><a class="main-menu__link" href="/Pages/Home/about.html">About us</a></li>
+                <li><a class="main-menu__link" href="/Pages/Home/rooms.html">Rooms</a></li>
+                <li><a class="main-menu__link" href="/Pages/Home/offers.html">Offers</a></li>
+                <li><a class="main-menu__link" href="/Pages/Home/blog.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <footer>
         <div class="container">

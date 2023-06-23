@@ -1,6 +1,10 @@
+main {
+  margin-top: 0px;
+}
+
 .header {
-  margin: 0;
-  width: 375px;
+  position: static;
+  width: 100%;
   height: 70px;
   background: #FFFFFF;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
@@ -12,40 +16,80 @@
   align-items: center;
   justify-content: space-between;
 }
+.header .wrapper #toggle-menu {
+  position: absolute;
+  width: 40px;
+  top: 1.5rem;
+  left: 1.5rem;
+  cursor: pointer;
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .header .wrapper #toggle-menu {
+    display: none;
+  }
+}
 .header .wrapper .left {
   height: 100%;
-  width: 100%;
+  width: 100px;
   display: flex;
-  flex: 50%;
+  margin-left: 20%;
   align-items: center;
   justify-content: center;
 }
-.header .wrapper .left .icon-hamburguesa {
-  width: 15.56px;
-  height: 15.56px;
-  margin-left: 20px;
-}
-.header .wrapper .left .container-h {
-  margin-left: 32px;
-  background: #FFFFFF;
-  box-shadow: 0px 14px 24px rgba(139, 139, 139, 0.25);
-  width: 36px;
-  height: 36px;
-  align-items: center;
-  justify-content: center;
+.header .wrapper .left img {
+  margin-top: 20px;
   display: flex;
-}
-.header .wrapper .left .logo {
-  margin-left: 13px;
+  justify-content: center;
+  align-items: center;
 }
 .header .wrapper .right {
   height: 100%;
   width: 100%;
   display: flex;
-  flex: 50%;
+  flex: 1;
   align-items: center;
   justify-content: flex-end;
 }
-.header .wrapper .right img {
-  margin-right: 15%;
+.header .wrapper .right .icon-pj {
+  margin-right: 15px;
+}
+.header .wrapper .right .icon-lupa {
+  margin-right: 15px;
+}
+.header .main-menu {
+  width: 100%;
+  min-width: 375px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  transition: transform 0.3s;
+  transform: translateY(-160%);
+}
+.header .main-menu--show {
+  transform: translateY(0);
+}
+@media screen and (min-width: 768px) {
+  .header .main-menu {
+    flex-direction: row;
+  }
+}
+.header .main-menu__item {
+  padding: 1rem;
+  list-style: none;
+  width: 100%;
+  height: 200px;
+}
+.header .main-menu__link {
+  color: black;
+  text-decoration: none;
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-top: 20px;
 }/*# sourceMappingURL=header.css.map */
