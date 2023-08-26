@@ -3,36 +3,343 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/script.js"></script>
+    <script src="https://kit.fontawesome.com/0d4d477689.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../Styles/styles.css">
     <link rel="stylesheet" href="/Styles/Header/header.css">
-    <link rel="stylesheet" href="Styles/styles.css">
-    <title>Hotel Miranda</title>
+    <link rel="stylesheet" href="/Styles/Home/titulo/titulo.css">
+    <link rel="stylesheet" href="/Styles/Home/homeStyle/homeStyle.css">
+    <link rel="stylesheet" href="/Styles/variables.css">
+    <link rel="stylesheet" href="/Styles/Footer/footer.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+    <script>
+        var swiper = new Swiper(".swiper mySwiper", {
+            slidesPreView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+    <title>Home</title>
 </head>
 <body>
+    
     <header class="header">
-        <div class="wrapper">
-            <div id="toggle-menu" class="toggle-menu">
-                <img src="/Img/hamburguesa.png" alt="">
+        <div class="header__mobile-flex">
+          <button class="header__hamburger btn-icon" id="hamburgerBtn">
+            <img src="../../Img/hamburguesa.png" alt="hamburger">
+          </button> 
+          <button class="header__hamburger d-none btn-icon" id="closeMenu">
+            <img src="../../Img/icon-x.png" alt="cross">
+          </button>
+          <div class="header__main">
+            <div class="header__main__flex">
+              <a href="home.html" class="header__main__anchor">
+                <div class="header__main__h">H</div>
+                <div class="header__main__title">
+                  <p class="header__main__title__hotel">HOTEL</p>
+                  <p class="header__main__title__miranda">MIRANDA</p>
+                </div>
+              </a>
             </div>
-            <div class="left">
-                <img src="/Img/Frame 47.svg" alt="">
+          </div>
+          <div class="header__btns">
+            <button class="header__btns__icon btn-icon">
+              <img src="../../Img/icono-person.svg" alt="user">           
+            </button>
+            <button class="header__btns__icon btn-icon">
+              <img src="../../Img/lupa.png" alt="magnifying-glass">
+            </button>
+          </div>
+        </div>
+        <nav class="header__navbar d-none" id="navbar">
+          <ul>
+            <li><a class="header__navbar__item" href="about.html">About us</a></li>
+            <li><a class="header__navbar__item" href="rooms.html">Rooms</a></li>
+            <li><a class="header__navbar__item" href="offers.html">Offers</a></li>
+            <li><a class="header__navbar__item" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+    <main>
+        <div class="home">
+            <h4>THE ULTIMATE LUXURY EXPERIENCE</h4>
+            <h1>The Perfect <br>
+                Base For You</h1>
+                <div class="home__btn">
+                    <button class="btn-take">TAKE A TOUR</button>
+                    <button class="btn-learn">LEARN MORE</button>
+                </div>
+        </div>
+        <div class="date">
+            <div class="date-container">
+                <div class="date-container_checkIn">
+                    <p>Arrival Date</p>
+                    <input id="myDateInput" type="date"  value="2020-03-30">
+                </div>
+                <div class="date-container_checkIn">
+                    <p>LeDeparture Date</p>
+                    <input id="myDateInput" type="date"  value="2020-03-30">
+                </div>
+                <button>CHECK AVAILABILITY</button>
             </div>
-            <div class="right">
-                <img class="icon-pj" src="Img/icono-pj.png" alt="">
-                <img class="icon-lupa" src="Img/lupa.png" alt="">
+            
+        </div>
+        <div class="about">
+            <div class="about-container-1">
+                <div class="wrapper">
+                    <h4>
+                        ABOUT US
+                    </h4>
+                    <h1>
+                        Discover Our Underground.
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sapiente, quibusdam beatae suscipit amet eveniet, tempora obcaecati illum quasi temporibus ipsum minima fuga distinctio vitae minus? Necessitatibus rerum ratione unde.</p>
+                    <button>BOOK NOW</button>
+                </div>
+            </div>
+            <div class="about-container-2">
+                <div class="wrapper-1">
+                    <div>
+                        <img class="v-1" src="../../Img/Vector.png" alt="">
+                        <img class="v-2" src="../../Img/Vector (1).png" alt="">
+                        <h2>Strong Team</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt esse ex cum?</p>
+                    </div>
+                    <div>
+                        <img src="../../Img/moderno-jardin-verano-agua-bella.jpg" alt="">
+                    </div>
+                </div>
+                <div class="wrapper-2">
+                    <div>
+                        <img id="imagen" src="../../Img/paisaje-casa-jardin-piscina-relajacion.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="../../Img/svg-gobbler - 2022-03-01T201407.985 1.png" alt="">
+                        <h2>Luxury Room</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt esse ex cum?</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <nav class="main-menu" id="main-menu">
-            <ul class="main-menu__item">
-                <li><a class="main-menu__link" href="/Pages/Home/about.html">About us</a></li>
-                <li><a class="main-menu__link" href="/Pages/Home/rooms.html">Rooms</a></li>
-                <li><a class="main-menu__link" href="/Pages/Home/offers.html">Offers</a></li>
-                <li><a class="main-menu__link" href="/Pages/Home/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+        <section class="rooms">
+            <p class="rooms__rooms">ROOMS</p>
+            <h2 class="rooms__title">Hand Picked Rooms</h2>
+            <div class="rooms__rect">
+                <img src="../../Img/single-bed.svg" alt="">
+                <img src="../../Img/wifi.svg" alt="">
+                <img src="../../Img/Vector-coche.svg" alt="">
+                <img src="../../Img/Vector-nieve.svg" alt="">
+                <img src="../../Img/Vector-pesa.svg" alt="">
+                <img src="../../Img/Vector-tabaco.svg" alt="">
+                <img src="../../Img/Vector-coctel.svg" alt="">
+            </div>
+            
+            <div class="swiper rooms__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide rooms__swiper__slide-1 rooms__swiper__slide"></div>
+                    <div class="swiper-slide rooms__swiper__slide-2 rooms__swiper__slide"></div>
+                    <div class="swiper-slide rooms__swiper__slide-3 rooms__swiper__slide"></div>
+                    <div class="swiper-slide rooms__swiper__slide-4 rooms__swiper__slide"></div>
+                </div>
+                <div class="rooms__swiper__nav-btn rooms__swiper__prev-btn">
+                    <img src="../../Img/arrow-left.svg" alt="">
+                </div>
+                <div class="rooms__swiper__nav-btn rooms__swiper__next-btn">
+                    <img src="../../Img/arrow-right.svg" alt="">
+                </div>
+            </div>
+            
+            <div class="swiper rooms__swiper-desktop">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide rooms__swiper__slide-1 rooms__swiper__slide"></div>
+                    <div class="swiper-slide rooms__swiper__slide-2 rooms__swiper__slide"></div>
+                    <div class="swiper-slide rooms__swiper__slide-3 rooms__swiper__slide"></div>
+                    <div class="swiper-slide rooms__swiper__slide-4 rooms__swiper__slide"></div>
+                </div>
+                <div class="rooms__swiper__nav-btn rooms__swiper__prev-btn">
+                    <img src="../../Img/arrow-left.svg" alt="">
+                </div>
+                <div class="rooms__swiper__nav-btn rooms__swiper__next-btn">
+                    <img src="../../Img/Vector-flecha.svg" alt="">
+                </div>
+            </div>
+
+
+            <div class="rooms__offer">
+                <h3 class="rooms__offer__title">Minimal Duplex Room</h3>
+                <p class="rooms__offer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                <p class="rooms__offer__price">$345<span class="rooms__offer__price__small-txt">/Night</span></p>
+            </div>  
+            </section>
+
+        </div>
+        <div class="video">
+            <div class="container__video">
+                <h3>INTRO VIDEO</h3>
+                <h1>Meet With Our Luxury Place.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis et, modi reiciendis vitae quia consectetur, adipisci molestias doloribus quas perferendis cum, nihil voluptatibus ea eum aliquam neque fugiat molestiae magnam.</p>
+                <div class="v-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4K6Sh1tsAW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                    
+                </div>
+                
+                    <button>BOOK NOW</button>
+                
+                
+            </div>
+        </div>
+        <section class="facilities">
+            <p class="facilities__intro">FACILITIES</p>
+            <h2 class="facilities__title">Core Features</h2>
+        
+            <div class="swiper facilities__swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide facilities__swiper__slide">
+                  <p class="facilities__swiper__slide__number">01</p>
+                  <img class="facilities__swiper__slide__icon" src="../../Img/icon 1.png" alt="">
+                  <h3 class="facilities__swiper__slide__title">Have High Rating</h3>
+                  <p class="facilities__swiper__slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                </div>
+                <div class="swiper-slide facilities__swiper__slide">
+                  <p class="facilities__swiper__slide__number">02</p>
+                  <img class="facilities__swiper__slide__icon" src="../../Img/clock.svg" alt="">
+                  <h3 class="facilities__swiper__slide__title">Quiet Hours</h3>
+                  <p class="facilities__swiper__slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                </div>
+                <div class="swiper-slide facilities__swiper__slide">
+                  <p class="facilities__swiper__slide__number">03</p>
+                  <img class="facilities__swiper__slide__icon" src="../../Img/ubicacion.svg" alt="">
+                  <h3 class="facilities__swiper__slide__title">Best Locations</h3>
+                  <p class="facilities__swiper__slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                </div>
+                <div class="swiper-slide facilities__swiper__slide">
+                  <p class="facilities__swiper__slide__number">04</p>
+                  <img class="facilities__swiper__slide__icon" src="../../Img/cancellation.svg" alt="">
+                  <h3 class="facilities__swiper__slide__title">Free Cancellation</h3>
+                  <p class="facilities__swiper__slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                </div>
+                <div class="swiper-slide facilities__swiper__slide">
+                  <p class="facilities__swiper__slide__number">05</p>
+                  <img class="facilities__swiper__slide__icon" src="../../Img/payment.svg" alt="">
+                  <h3 class="facilities__swiper__slide__title">Payment Options</h3>
+                  <p class="facilities__swiper__slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                </div>
+                <div class="swiper-slide facilities__swiper__slide">
+                  <p class="facilities__swiper__slide__number">06</p>
+                  <img class="facilities__swiper__slide__icon" src="../../Img/offer.svg" alt="">
+                  <h3 class="facilities__swiper__slide__title">Special Offers</h3>
+                  <p class="facilities__swiper__slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            
+            <img class="facilities__bottom-img" src="../../Img/facilities-img.png" alt="donut">
+            
+          </section>
+        
+          <section class="menu-section">
+            <div class="menu-section__head">
+              <div>
+                <p class="menu-section__intro section-intro">MENU</p>
+                <h2 class="menu-section__title section-title">Our Foods Menu</h2>
+              </div>
+            </div>
+            <div class="menu-section__menu">
+              <div class="menu-section__menu__first-col">
+                <div class="menu-section__menu__option">
+                  <img class="menu-section__menu__option__img" src="../../Img/bacon-eggs.jpg" alt="bacon and eggs">
+                  <div class="menu-section__menu__option__content">
+                    <h4 class="menu-section__menu__option__content__title">Eggs & Bacon</h4>
+                    <p class="menu-section__menu__option__content__text">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                  </div>
+                </div>
+                <div class="menu-section__menu__option">
+                  <img class="menu-section__menu__option__img" src="../../Img/coffee.jpg" alt="coffee or tea">
+                  <div class="menu-section__menu__option__content">
+                    <h4 class="menu-section__menu__option__content__title">Tea or Coffee</h4>
+                    <p class="menu-section__menu__option__content__text">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                  </div>
+                </div>
+                <div class="menu-section__menu__option">
+                  <img class="menu-section__menu__option__img" src="../../Img/chia-oatmeal.jpg" alt="Chia outmeal">
+                  <div class="menu-section__menu__option__content">
+                    <h4 class="menu-section__menu__option__content__title">Chia Oatmeal</h4>
+                    <p class="menu-section__menu__option__content__text">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-section__menu__second-col only-desktop"></div>
+              <div class="menu-section__menu__pagination">
+                <button class="menu-section__menu__pagination__prev">
+                  <img src="../../Img/arrow-left.svg" alt="">
+                </button>
+                <button class="menu-section__menu__pagination__next">
+                  <img src="../../Img/arrow-right.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </section>
+          
+          <div class="menu-section__bottom-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="menu-section__bottom-slider__img" src="../../Img/menu-1.jpg" alt="menu-1">
+              </div>
+              <div class="swiper-slide">
+                <img class="menu-section__bottom-slider__img" src="../../Img/menu-2.jpg" alt="menu-2">
+              </div>  
+              <div class="swiper-slide">
+                <img class="menu-section__bottom-slider__img" src="../../Img/menu-3.jpg" alt="menu-3">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        <div class="proyects">
+            <div class="container">
+                <div>
+                    <img src="../../Img/icon 5.png" alt="">
+                    <h1>84k+</h1>
+                    <p>Projects are Completed</p>
+                </div>
+                <div>
+                    <img src="../../Img/icon 6.png" alt="">
+                    <h1>10M+
+                        </h1>
+                    <p>Active Backers Around World</p>
+                </div>
+                <div>
+                    <img src="../../Img/icon 7.png" alt="">
+                    <h1>02k+
+                        </h1>
+                    <p>Categories Served</p>
+                </div>
+                <div>
+                    <img src="../../Img/icon 8.png" alt="">
+                    <h1>100M+
+                        </h1>
+                    <p>Idea Raised Funds</p>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer>
         <div class="container">
+            <div class="container1">
             <div class="logo">
                 <img src="../../Img/Logo.png" alt="">
             </div>
@@ -45,6 +352,7 @@
                     <li><i class="fa-brands fa-linkedin" style="color: #777777;"></i></li>
                     <li><i class="fa-brands fa-square-youtube" style="color: #777777;"></i></li>
                 </ul>
+            </div>
             </div>
             <div class="services">
                 <h4>Services.</h4>
@@ -90,11 +398,14 @@
                     </div>
                 </div>
             </div>
-            <div class="copywrite">
-                <span>Copyright By@Example - 2020</span>
-                <span>Terms of use    |    Privacy Environmental Policy</span>
-            </div>
+            
+        </div>
+        <div class="copywrite">
+            <span>Copyright By@Example - 2020</span>
+            <span>Terms of use    |    Privacy Environmental Policy</span>
         </div>
     </footer>
+    <script src="/script.js"></script>
+    <script src="/swiper.js" type="module"></script>
 </body>
 </html>
