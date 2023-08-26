@@ -1,0 +1,529 @@
+.home__rooms-details {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-left: 20px;
+  width: 100%;
+  background-color: #333333;
+}
+.home__rooms-details h4 {
+  margin-top: 75px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  display: flex;
+  font-family: "Archivo", sans-serif;
+  color: white;
+  letter-spacing: 2.8px;
+}
+.home__rooms-details h1 {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.home__rooms-details div {
+  height: 49px;
+  width: 186px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: right;
+  margin-right: 0;
+  margin-left: 42%;
+}
+.home__rooms-details span {
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: -0.4799999893px;
+  text-align: left;
+  white-space: break-spaces;
+  color: #222222;
+}
+.home__rooms-details #seccion {
+  color: #BEAD8E;
+}
+
+.room {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+}
+.room h4 {
+  padding-top: 38px;
+  padding-left: 20px;
+  font-family: "Archivo", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2.7999999523px;
+  text-align: left;
+  color: #777777;
+}
+.room h1 {
+  padding-left: 20px;
+  padding-top: 20px;
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2000000477px;
+  text-align: center;
+  font-size: 40px;
+  text-align: left;
+}
+.room .precio {
+  font-family: "Archivo", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #BEAD8E;
+  margin-left: 20px;
+}
+.room .noche {
+  font-family: "Archivo", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #BEAD8E;
+  font-size: 13px;
+}
+.room .offer__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 24px;
+  margin-bottom: 42px;
+  box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.25);
+}
+
+.date .container {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.date .container h4 {
+  font-family: "Archivo", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.5400000215px;
+  margin-top: 49px;
+  margin-bottom: 35px;
+}
+.date .container span {
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Roboto", sans-serif;
+  color: #222222;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-left: -220px;
+}
+.date .container #myDateInput {
+  width: 290px;
+  padding: 20px;
+  border: none;
+  background-color: #F8F8F8;
+  color: #777777;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+.date .container #myDateInput::-webkit-calendar-picker-indicator {
+  margin-right: 27px;
+  font-size: 20px;
+}
+.date .container #myDateInput[type=date]::-moz-calendar-picker-indicator {
+  margin-right: 27px;
+  font-size: 20px;
+}
+.date button {
+  height: 60px;
+  width: 217px;
+  background-color: #BEAD8E;
+  color: white;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 2.7999999523px;
+  margin-bottom: 24px;
+  margin-top: 42px;
+  width: 290px;
+  border: none;
+}
+.date p {
+  padding: 32px 20px;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #777777;
+}
+
+.amanities {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.amanities h1 {
+  padding-left: 20px;
+  padding-top: 20px;
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2000000477px;
+  text-align: center;
+  text-align: left;
+}
+.amanities .linea {
+  border-bottom: 1px solid #F1F1F1;
+  width: 335px;
+  margin-left: 20px;
+}
+.amanities div {
+  width: 60%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+.amanities div ul {
+  margin-left: 20px;
+  list-style: none;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.amanities div ul li {
+  padding: 5px;
+}
+.amanities div ul li span {
+  padding-top: 38px;
+  padding-left: 20px;
+  font-family: "Archivo", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2.7999999523px;
+  text-align: left;
+  color: #777777;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0px;
+}
+.amanities .founder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 375px;
+  box-shadow: 0px 14px 24px rgba(190, 173, 142, 0.27);
+  padding: 25px 25px;
+}
+.amanities .founder .founder_imagenes {
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.amanities .founder .founder_imagenes #persona {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  color: gray;
+  margin-bottom: 10px;
+}
+.amanities .founder .founder_imagenes #circulo {
+  position: absolute;
+  translate: 60px -60px;
+}
+.amanities .founder .founder_imagenes #check {
+  position: absolute;
+  translate: 60px -60px;
+}
+.amanities .founder h1 {
+  padding-left: 20px;
+  padding-top: 20px;
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2000000477px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.9px;
+}
+.amanities .founder h4 {
+  padding-top: 38px;
+  padding-left: 20px;
+  font-family: "Archivo", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2.7999999523px;
+  text-align: left;
+  color: #777777;
+  color: #BDAC8D;
+  font-size: 14px;
+  line-height: 15px;
+  text-align: center;
+  margin-top: -20px;
+}
+.amanities .founder p {
+  padding: 32px 20px;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #777777;
+  text-align: center;
+  width: 317px;
+  margin-top: -10px;
+}
+
+.cancellation {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.cancellation h1 {
+  padding-left: 20px;
+  padding-top: 20px;
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2000000477px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.9px;
+  text-align: left;
+}
+.cancellation .linea {
+  border-bottom: 1px solid #F1F1F1;
+  width: 335px;
+  margin-left: 20px;
+}
+.cancellation p {
+  padding: 32px 20px;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #777777;
+  text-align: left;
+  width: 317px;
+  margin-top: -10px;
+}
+
+.related-rooms {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.related-rooms h1 {
+  padding-left: 20px;
+  padding-top: 20px;
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2000000477px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.9px;
+  text-align: left;
+}
+.related-rooms .related-rooms_container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.related-rooms .related-rooms_container .linea {
+  border-bottom: 1px solid #F1F1F1;
+  width: 80%;
+  margin-left: 20px;
+}
+.related-rooms .related-rooms_container .rooms {
+  margin-bottom: -60px;
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.related-rooms .related-rooms_container .rooms .slider {
+  height: 218px;
+  width: 335px;
+  left: 0px;
+  top: 3061px;
+  border-radius: 0px;
+  background-color: #E9E9E9;
+}
+.related-rooms .related-rooms_container .rooms .menu_iconos {
+  display: flex;
+  height: 40px;
+  width: 256px;
+  background-color: white;
+  margin-top: -20px;
+  margin-bottom: 30px;
+  padding: 10px;
+  justify-content: space-between;
+}
+.related-rooms .related-rooms_container .rooms .menu_iconos img {
+  padding-right: 10px;
+}
+.related-rooms .related-rooms_container .rooms .price {
+  height: 225px;
+  width: 375px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.related-rooms .related-rooms_container .rooms .price div {
+  height: 215px;
+  width: 335px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  margin-top: -40px;
+}
+.related-rooms .related-rooms_container .rooms .price div h2 {
+  margin-top: 19px;
+  font-family: "Old Standard TT", serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -1.2000000477px;
+  text-align: center;
+}
+.related-rooms .related-rooms_container .rooms .price div p {
+  margin-top: 12px;
+  margin-left: 24px;
+  height: 100px;
+  width: 287px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #777777;
+}
+.related-rooms .related-rooms_container .rooms .price div div {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.related-rooms .related-rooms_container .rooms .price div .precio {
+  font-family: "Archivo", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #BEAD8E;
+  font-size: 16px;
+  line-height: 17.41px;
+  margin-top: -30px;
+}
+.related-rooms .related-rooms_container .rooms .price div .noche {
+  font-family: "Archivo", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #BEAD8E;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: -30px;
+  color: #BDBDBD;
+  white-space: break-spaces;
+}
+
+@media only screen and (min-width: 1000px) {
+  .conainer__rooms_date {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: center;
+  }
+  .conainer__rooms_date .date {
+    margin-top: 50px;
+  }
+  .conainer__rooms_date .date p {
+    margin-top: 30px;
+    margin-right: 20%;
+    margin-left: -90%;
+  }
+  .amanities .wrapper-iconos {
+    display: flex;
+    justify-content: space-between;
+  }
+  .cancellation {
+    align-items: start;
+    margin-left: 10%;
+  }
+  .cancellation p {
+    width: 70%;
+  }
+  .related-rooms {
+    display: flex;
+    margin-left: 10%;
+    align-items: initial;
+    justify-content: start;
+    flex-direction: column;
+  }
+  .related-rooms .related-rooms_container {
+    display: flex;
+    flex-direction: row;
+  }
+  .related-rooms .related-rooms_container .rooms {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=rooms-details.css.map */

@@ -1,95 +1,186 @@
 @import "../../variables";
 
-.menu{
-    width: 375px;
-    height: 758px;
-    margin-top: 40px;
-    
-    flex-direction: column;
+$color-primary: #333333;
+$color-secondary: #BEAD8E;
+$color-dark: #222222;
+$color-bg-gray: #F9F9F9;
+$color-text: #777;
 
-    img{
+$px-sm: 20px;
+$px-lg: 18%;
+
+$max-wsm: 650px;
+$max-wlg: 1400px;
+
+.menu-section {
+    padding: 0 $px-sm;
+  
+    &__intro {
+      color: $color-text;
+      margin-bottom: 24px;
+    }
+  
+    &__title {
+      margin-bottom: 32px;
+    }
+  
+    &__menu {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 60px;
+  
+      &__option {
         display: flex;
-        margin-left: 240px;
-    }
-    h4{
-        @include titulo_block;
-
-    }
-    h1{
-        @include titulo_big;
-        text-align: left;
-    }
-
-    .conteiner1{
-        display: flex;
-        flex-direction: row;
-        align-items: left;
-        justify-content: left;
-        height: 350px;
-        width: 375px;
-        margin-left: 20px;
-
-        .imagenes{
-            img{
-            margin: 20px;
-            margin-left: 0;
-            height: 120px;
-            width: 120px;
-            background-color: gray;
-            }
+        align-items: center;
+        margin-bottom: 20px;
+  
+        &__img {
+          min-width: 120px;
+          width: 120px;
+          height: 120px;
+          object-fit: cover;
+          margin-right: 30px;
         }
-        .text{
-            margin: 20px;
-            h3{
-                margin-bottom: 12px;
-                font-family: 'Old Standard TT', serif;
-                font-size: 24px;
-                font-weight: 400;
-                line-height: 24px;
-                letter-spacing: -0.7200000286102295px;
-                text-align: left;
-
-            }
-
-            p{
-                margin-bottom: 35px;
-                font-family: 'Roboto', sans-serif;
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 24px;
-                letter-spacing: 0px;
-                text-align: left;
-                height: 72px;
-                width: 185px;
-            }
+  
+        &__content {
+  
+          &__title {
+            font-weight: 400;
+            font-size: 24px;
+            margin-bottom: 8px;
+          }
+  
+          &__text {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+          }
         }
+      }
+  
+      &__pagination {
+        text-align: right;
         
+        button {
+          border: none;
+          cursor: pointer;
+          padding: 10px 20px;
+          position: relative;
+        }
+  
+        &__prev {
+          background: #F8F8F8;
+          margin-right: 10px;
+        }
+  
+        &__next {
+          background-color: $color-secondary;
+        }
+      }
     }
-    .btn{
-        width: 375px;
+  
+    &__bottom-slider {
+      margin-bottom: 32px;
+      overflow-x: hidden;
+  
+      &__img {
+        object-fit: cover;
+        margin: 20px;
+        width: calc(100% - 40px);
+        min-height: 250px;
+        aspect-ratio: 2 / 1;
+        margin-bottom: 30px;
+        background-color: black;
+      }
+    }
+  }
+  
+  @media only screen and (min-width: 1000px) {
+    .menu-section {
+      padding: 60px 5%;
+      padding-bottom: 0;
+      max-width: $max-wlg;
+      margin: auto;
+      background-color: transparent;
+  
+      &__title {
+        font-size: 80px !important;
+      }
+  
+      &__head {
         display: flex;
-        align-items: end;
-        justify-content: end;
-        margin-top: 60px;
-        
-
-        .btn-1{
-        height: 36px;
-        width: 36px;
+        justify-content: space-between;
+        align-items: center;
+      }
+  
+      &__menu {
         margin-top: 30px;
-        margin-right: 16px;
-        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-bottom: 80px;
+  
+        &__first-col {
+          margin-right: 30px;
         }
-        .btn-2{
-            background-color: #BEAD8E;
-            height: 36px;
-            width: 36px;
-            margin-top: 30px;
-            margin-right: 16px;
-            border: none;
+  
+        &__option {
+          position: relative;
+          cursor: pointer;
+          transition: all .3s;
+          
+          &__content {
+            &__text {
+              width: 75%;
+            }
+          }
+  
+          &:hover {
+            background-color: $color-dark;
             color: white;
-
+            &::after {
+              content: '\2794';
+              position: absolute;
+              right: 5%;
+              top: 50%;
+              font-size: 30px;
+              color: $color-secondary;
+              transform: translateY(-50%);
+            }
+          }
         }
+  
+        &__pagination {
+          button {
+            width: 50px;
+            height: 50px;
+            padding: 0;
+            img {
+              width: 20px;
+              height: 20px;
+            }
+          }
+          &__prev {
+            margin-right: 25px;
+          }
+        }
+      }
+  
+      &__bottom-desktop {
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  
+        img {
+          width: 32%;
+          aspect-ratio: 3 / 2;
+          object-fit: cover;
+          margin: 0;
+        }
+      }
     }
-    
-}
+  }

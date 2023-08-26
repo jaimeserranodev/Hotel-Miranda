@@ -1,10 +1,10 @@
 @import "../../variables";
 
 .video{
-    .container{
-        margin-top: 100px;
+    .container__video{
+
         height: 876px;
-        width: 375px;
+        min-width: 375px;
         background-color:$color_black;
         display: flex;
         flex-direction: column;
@@ -66,4 +66,26 @@
             @include button_book_now;
         }
     }
+}
+
+@media only screen and (min-width: 1000px) {
+    .video{
+        width: 100%;
+        .container__video{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        h1{
+            width: 700px;
+        }
+        p{
+            width: 700px;
+        }
+        .v-video{
+            width: 700px;
+            height: 400px;
+        }
+        }
+        
+}
 }

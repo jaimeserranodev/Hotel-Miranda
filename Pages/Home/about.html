@@ -11,36 +11,51 @@
     <link rel="stylesheet" href="/Styles/Header/header.css">
     <link rel="stylesheet" href="/Styles/Footer/footer.css">
     <link rel="stylesheet" href="/Styles/About/titulo/titulo.css">
-    <link rel="stylesheet" href="/Styles/About/video/video.css">
-    <link rel="stylesheet" href="/Styles/About/restaurant/restaurant.css">
-    <link rel="stylesheet" href="/Styles/About/facilities/facilities.css">
-    <link rel="stylesheet" href="/Styles/About/counter/counter.css">
-    <script src="/script.js"></script>
+    <link rel="stylesheet" href="/Styles/About/aboutStyle/output.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
     <title>About</title>
 </head>
 <body>
     <header class="header">
-        <div class="wrapper">
-            <div id="toggle-menu" class="toggle-menu">
-                <img src="/Img/hamburguesa.png" alt="">
+        <div class="header__mobile-flex">
+          <button class="header__hamburger btn-icon" id="hamburgerBtn">
+            <img src="../../Img/hamburguesa.png" alt="hamburger">
+          </button> 
+          <button class="header__hamburger d-none btn-icon" id="closeMenu">
+            <img src="../../Img/icon-x.png" alt="cross">
+          </button>
+          <div class="header__main">
+            <div class="header__main__flex">
+              <a href="home.html" class="header__main__anchor">
+                <div class="header__main__h">H</div>
+                <div class="header__main__title">
+                  <p class="header__main__title__hotel">HOTEL</p>
+                  <p class="header__main__title__miranda">MIRANDA</p>
+                </div>
+              </a>
             </div>
-            <div class="left">
-                <img src="/Img/Frame 47.svg" alt="">
-            </div>
-            <div class="right">
-                <img class="icon-pj" src="/Img/icono-pj.png" alt="">
-                <img class="icon-lupa" src="/Img/lupa.png" alt="">
-            </div>
+          </div>
+          <div class="header__btns">
+            <button class="header__btns__icon btn-icon">
+              <img src="../../Img/icono-person.svg" alt="user">           
+            </button>
+            <button class="header__btns__icon btn-icon">
+              <img src="../../Img/lupa.png" alt="magnifying-glass">
+            </button>
+          </div>
         </div>
-        <nav class="main-menu" id="main-menu">
-            <ul class="main-menu__item">
-                <li><a class="main-menu__link" href="/Pages/Home/about.html">About us</a></li>
-                <li><a class="main-menu__link" href="/Pages/Home/rooms.html">Rooms</a></li>
-                <li><a class="main-menu__link" href="/Pages/Home/offers.html">Offers</a></li>
-                <li><a class="main-menu__link" href="/Pages/Home/blog.html">Contact</a></li>
-            </ul>
+        <nav class="header__navbar d-none" id="navbar">
+          <ul>
+            <li><a class="header__navbar__item" href="about.html">About us</a></li>
+            <li><a class="header__navbar__item" href="rooms.html">Rooms</a></li>
+            <li><a class="header__navbar__item" href="offers.html">Offers</a></li>
+            <li><a class="header__navbar__item" href="contact.html">Contact</a></li>
+          </ul>
         </nav>
-    </header>
+      </header>
     <main>
         <div class="home">
             <h4>THE ULTIMATE LUXURY </h4>
@@ -51,7 +66,7 @@
         </div>
         <div class="video">
             <div class="video_container">
-                <iframe width="335" height="186" src="https://www.youtube.com/embed/IgQjI7yLg2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="videoYoutube" src="https://www.youtube.com/embed/IgQjI7yLg2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <p>
                 Hello. Our hotel has been present for over 20 years. We make the best for all our customers.
@@ -76,40 +91,71 @@
             </div>
         </div>
         <div class="restaurant">
-            <img src="" alt="">
-            <h4>RESTAURANT</h4>
-            <h1>Get Restaurant Facilities & Many Other More</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem por incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+            <img src="../../Img/restaurant.jpg" alt="">
+            <div>
+                <h4>RESTAURANT</h4>
+                <h1>Get Restaurant Facilities & Many Other More</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem por incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
             <button>TAKE A TOUR</button>
+            </div>
         </div>
-        <div class="facilities">
-            <h4>FACILITIES</h4>
-            <h2>
-                Core Features
-            </h2>
-            <div class="container-cards">
-                <div class="card-1">
-                    <div class="container-img">
-                        <img class="icon-1" src="../../Img/icon 1.png" alt="">
-                        <img class="number-1" src="../../Img/01.svg" alt="">
+        <div class="facilities-black-wrapper">
+            <section class="facilities facilities-black">
+              <div class="content-wrapper">
+              <p class="facilities__intro facilities-black__text">FACILITIES</p>
+              <h2 class="facilities__title facilities-black__text">Core Features</h2>
+          
+              <div class="facilities-black__swiper-wrapper">
+                <div class="swiper facilities__swiper facilities-black__swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide facilities__swiper__slide">
+                      <p class="facilities__swiper__slide__number facilities-black__number">01</p>
+                      <img class="facilities__swiper__slide__icon" src="../../Img/icon 1.png" alt="">
+                      <h3 class="facilities__swiper__slide__title facilities-black__text">Have High Rating</h3>
+                      <p class="facilities__swiper__slide__text facilities-black__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
                     </div>
-                    <h3>Have High Rating</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eveniet autem, fugit quasi dolor rerum!</p>
-                </div>
-                
-            </div>
-            <div class="dots">
-                <span>.</span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+                    <div class="swiper-slide facilities__swiper__slide">
+                      <p class="facilities__swiper__slide__number facilities-black__number">02</p>
+                      <img class="facilities__swiper__slide__icon" src="../../Img/clock.svg" alt="">
+                      <h3 class="facilities__swiper__slide__title facilities-black__text">Quiet Hours</h3>
+                      <p class="facilities__swiper__slide__text facilities-black__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                    </div>
+                    <div class="swiper-slide facilities__swiper__slide">
+                      <p class="facilities__swiper__slide__number facilities-black__number">03</p>
+                      <img class="facilities__swiper__slide__icon" src="../../Img/ubicacion.svg" alt="">
+                      <h3 class="facilities__swiper__slide__title facilities-black__text">Best Locations</h3>
+                      <p class="facilities__swiper__slide__text facilities-black__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                    </div>
+                    <div class="swiper-slide facilities__swiper__slide">
+                      <p class="facilities__swiper__slide__number facilities-black__number">04</p>
+                      <img class="facilities__swiper__slide__icon" src="../../Img/cancellation.svg" alt="">
+                      <h3 class="facilities__swiper__slide__title facilities-black__text">Free Cancellation</h3>
+                      <p class="facilities__swiper__slide__text facilities-black__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                    </div>
+                    <div class="swiper-slide facilities__swiper__slide">
+                      <p class="facilities__swiper__slide__number facilities-black__number">05</p>
+                      <img class="facilities__swiper__slide__icon" src="../../Img/payment.svg" alt="">
+                      <h3 class="facilities__swiper__slide__title facilities-black__text">Payment Options</h3>
+                      <p class="facilities__swiper__slide__text facilities-black__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                    </div>
+                    <div class="swiper-slide facilities__swiper__slide">
+                      <p class="facilities__swiper__slide__number facilities-black__number">06</p>
+                      <img class="facilities__swiper__slide__icon" src="../../Img/offer.svg" alt="">
+                      <h3 class="facilities__swiper__slide__title facilities-black__text">Special Offers</h3>
+                      <p class="facilities__swiper__slide__text facilities-black__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+  </section>
+  
         </div>
         <div class="counter">
             <h4>COUNTER</h4>
             <h1>Some Fun Facts</h1>
+            <div class="main_counter_container">
             <div class="counter_container">
                 <img src="/Img/svg-gobbler - 2022-03-03T162637.580 1.svg" alt="">
                 <div>
@@ -134,11 +180,13 @@
                 </div>
                 <img src="/Img/Vector-flecha.svg" alt="">
             </div>
+          </div>
             <img id="imagen" src="/Img/moderno-jardin-verano-agua-bella.jpg" alt="">
         </div>
     </main>
     <footer>
         <div class="container">
+            <div class="container1">
             <div class="logo">
                 <img src="../../Img/Logo.png" alt="">
             </div>
@@ -151,6 +199,7 @@
                     <li><i class="fa-brands fa-linkedin" style="color: #777777;"></i></li>
                     <li><i class="fa-brands fa-square-youtube" style="color: #777777;"></i></li>
                 </ul>
+            </div>
             </div>
             <div class="services">
                 <h4>Services.</h4>
@@ -196,11 +245,14 @@
                     </div>
                 </div>
             </div>
-            <div class="copywrite">
-                <span>Copyright By@Example - 2020</span>
-                <span>Terms of use    |    Privacy Environmental Policy</span>
-            </div>
+            
+        </div>
+        <div class="copywrite">
+            <span>Copyright By@Example - 2020</span>
+            <span>Terms of use    |    Privacy Environmental Policy</span>
         </div>
     </footer>
+    <script src="/script.js"></script>
+    <script src="/swiper.js" type="module"></script>
 </body>
 </html>

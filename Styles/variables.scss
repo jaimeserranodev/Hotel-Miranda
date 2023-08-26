@@ -1,0 +1,194 @@
+//VARIABLES 
+$color-primary: #333333;
+$color-secondary: #BEAD8E;
+$color-dark: #222222;
+$color-bg-gray: #F9F9F9;
+$color-text: #777;
+
+$px-sm: 20px;
+$px-lg: 18%;
+
+$max-wsm: 650px;
+$max-wlg: 1400px;
+//FONT
+$font_button: 'Archivo', sans-serif;
+$font-titulo: 'Old Standard TT', serif;
+$font_descripcion: 'Roboto', sans-serif;
+
+//COLOR
+
+$color_main: #BEAD8E;
+$color_black: #222222;
+$color_gray: #777777;
+
+
+//MIXIN
+
+// BLOQUES 
+//TITULO
+@mixin bloque_titulo{
+    .home{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        padding-left: 20px;
+    
+        width: 100%;
+        background-color: #333333;
+        
+    
+        h4{
+            margin-top: 75px;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 18px;
+            display: flex;
+            font-family: 'Archivo', sans-serif;
+            color: white;
+            letter-spacing: 2.8px;
+        }
+    
+        h1{
+            font-family: 'Old Standard TT', serif;
+            font-weight: 400;
+            font-size: 56px;
+            line-height: 60px;
+            letter-spacing: -1.2px;
+            color: white;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        div{
+            height: 49px;
+            width: 156px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-items: right;
+            margin-right: 0;
+            margin-left: 56%;
+        }
+        span{
+            font-family: 'Archivo', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 17px;
+            letter-spacing: -0.47999998927116394px;
+            text-align: left;
+            white-space: break-spaces;
+            color: #222222;
+            
+        }
+        #seccion{
+            color: #BEAD8E;
+        }
+    }
+}
+
+//////////////////////////////////
+
+//BLOQUE INPUT FORMULARIO
+@mixin input_formulario{
+    background-repeat: no-repeat;
+    background-position: 4px center;
+    background-size: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20.9375rem;
+    height: 4.1875rem;
+    margin-top: 30px;
+    background-color: #F8F8F8;
+}
+
+
+//TITULOS
+@mixin titulo_block{
+    padding-top: 38px;
+    padding-left: 20px;
+    font-family: $font_button;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 2.799999952316284px;
+    text-align: left;
+    color: #777777;
+}
+
+@mixin titulo_big{
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family: $font-titulo;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: -1.2000000476837158px;
+    text-align: center;
+}
+
+@mixin parrafo_gris{
+    padding: 32px 20px;
+    font-family: $font_button;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #777777;
+}
+
+@mixin titulo_cajas{
+
+}
+
+//BUTTON
+@mixin button{
+        height: 60px;
+        width: 217px;
+        background-color: $color_main;
+        color: white;
+        font-family: $font_button;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 2.799999952316284px;
+        margin-bottom: 24px;
+}
+
+@mixin button_book_now{
+            height: 60px;
+            width: 217px;
+            margin-left: 20px;
+            margin-top: 36px;
+            background-color:$color_main;
+            border: none;
+            color: white;
+            font-family: $font_button;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 15px;
+            letter-spacing: 2.799999952316284px;
+            margin-bottom: 24px;
+}
+
+
+//ROOMS - PRECIO
+@mixin precio{
+    font-family: $font_button;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0px;
+    text-align: center;
+    color:$color_main;
+}
+
+
+//IMAGENES
+
+@mixin img{
+    height: 300px;
+    width: 270px;
+}

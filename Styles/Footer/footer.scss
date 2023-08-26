@@ -1,10 +1,10 @@
 footer{
     background: url(../../Img/Rectángulo\ 2\ 1.png);
     height: 1187px;
-    width: 375px;
+    min-width: 100%;
     margin-top: 60px;
     display: flex;
-
+    flex-direction: column;
     .container{
         display: flex;
         align-items: center;
@@ -62,7 +62,7 @@ footer{
         margin-left: 20px;
         display: flex;
         flex-direction: column;
-        width: 365px;
+        min-width: 375px;
         flex-wrap: wrap;
         h4{
             font-family: "Old Standard TT";
@@ -96,7 +96,7 @@ footer{
         }
     }
     .contactUs{
-        width: 375px;
+        min-width: 375px;
         margin-left: 20px;
         
         h4{
@@ -148,7 +148,7 @@ footer{
         padding-top: 20px;
         padding-bottom: 20px;
         height: 94px;
-        width: 375px;
+        min-width: 375px;
         background-color: #F8F8F8;
         display: flex;
         flex-direction: column;
@@ -164,6 +164,40 @@ footer{
             margin-top: 12px;
             margin-left: 20px;
         
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    footer{
+        height: 700px;
+        width: 100%;
+        padding-bottom: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 auto;
+        .container{
+            
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        .container1{
+            width: 33%;
+        }
+        .services{
+            width: 33%;
+        }
+        .contactUs{
+            width: 33%;
+        }
+        
+    }
+    .copywrite{
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-around;
         }
     }
 }

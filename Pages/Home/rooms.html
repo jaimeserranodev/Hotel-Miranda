@@ -10,45 +10,60 @@
     <link rel="stylesheet" href="../../Styles/styles.css">
     <link rel="stylesheet" href="/Styles/Footer/footer.css">
     <link rel="stylesheet" href="/Styles/Header/header.css">
-    <link rel="stylesheet" href="/Styles/Rooms/home/home.css">
     <link rel="stylesheet" href="/Styles/Rooms/rooms/rooms.css">
-    <script src="/script.js"></script>
-    <title>Document</title>
+    
+    <title>Hotel Miranda - Rooms</title>
 </head>
 <body>
     <header class="header">
-        <div class="wrapper">
-            <div id="toggle-menu" class="toggle-menu">
-                <img src="/Img/hamburguesa.png" alt="">
+        <div class="header__mobile-flex">
+          <button class="header__hamburger btn-icon" id="hamburgerBtn">
+            <img src="../../Img/hamburguesa.png" alt="hamburger">
+          </button> 
+          <button class="header__hamburger d-none btn-icon" id="closeMenu">
+            <img src="../../Img/icon-x.png" alt="cross">
+          </button>
+          <div class="header__main">
+            <div class="header__main__flex">
+              <a href="home.html" class="header__main__anchor">
+                <div class="header__main__h">H</div>
+                <div class="header__main__title">
+                  <p class="header__main__title__hotel">HOTEL</p>
+                  <p class="header__main__title__miranda">MIRANDA</p>
+                </div>
+              </a>
             </div>
-            <div class="left">
-                <img src="/Img/Frame 47.svg" alt="">
-            </div>
-            <div class="right">
-                <img class="icon-pj" src="/Img/icono-pj.png" alt="">
-                <img class="icon-lupa" src="/Img/lupa.png" alt="">
-            </div>
+          </div>
+          <div class="header__btns">
+            <button class="header__btns__icon btn-icon">
+              <img src="../../Img/icono-person.svg" alt="user">           
+            </button>
+            <button class="header__btns__icon btn-icon">
+              <img src="../../Img/lupa.png" alt="magnifying-glass">
+            </button>
+          </div>
         </div>
-        <nav class="main-menu" id="main-menu">
-            <ul class="main-menu__item">
-                <li><a class="main-menu__link" href="/Pages/Home/about.html">About us</a></li>
-                <li><a class="main-menu__link" href="/Pages/Home/rooms.html">Rooms</a></li>
-                <li><a class="main-menu__link" href="/Pages/Home/offers.html">Offers</a></li>
-                <li><a class="main-menu__link" href="/Pages/Home/blog.html">Contact</a></li>
-            </ul>
+        <nav class="header__navbar d-none" id="navbar">
+          <ul>
+            <li><a class="header__navbar__item" href="about.html">About us</a></li>
+            <li><a class="header__navbar__item" href="rooms.html">Rooms</a></li>
+            <li><a class="header__navbar__item" href="offers.html">Offers</a></li>
+            <li><a class="header__navbar__item" href="contact.html">Contact</a></li>
+          </ul>
         </nav>
-    </header>
+      </header>
     <main>
-        <div class="home">
+        <div class="home__rooms">
             <h4>THE ULTIMATE LUXURY </h4>
             <h1>Ultimate <br>Room</h1>
             <div>
                 <span>Home   |</span><span id="seccion">   Rooms</span>
             </div>
         </div>
+        <div class="rooms_flex">
         <div class="rooms">
             <div class="slider">
-
+                <img class="rooms-flex__box__img" src="../../Img/rooms-1.jpg" alt="Hotel room">
             </div>
             <div class="menu_iconos">
                 <img src="/Img/Vector-cama.svg" alt="">
@@ -64,14 +79,15 @@
                     <h2>Minimal Duplex Room</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cupiditate aliquam ab magni ex deleniti!</p>
                     <div>
-                        <span class="precio">$345/Night     </span><span class="noche">        Book Now</span>
+                        <span class="precio">$345/Night     </span>
+                        <a href="../Home/rooms-details.html" class="noche">    Book Now</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="rooms">
             <div class="slider">
-
+                <img class="rooms-flex__box__img" src="../../Img/rooms-1.jpg" alt="Hotel room">
             </div>
             <div class="menu_iconos">
                 <img src="/Img/Vector-cama.svg" alt="">
@@ -87,14 +103,14 @@
                     <h2>Minimal Duplex Room</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cupiditate aliquam ab magni ex deleniti!</p>
                     <div>
-                        <span class="precio">$345/Night     </span><span class="noche">        Book Now</span>
+                        <span class="precio">$345/Night     </span><a href="../Home/rooms-details.html" class="noche">    Book Now</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="rooms">
             <div class="slider">
-
+                <img class="rooms-flex__box__img" src="../../Img/rooms-1.jpg" alt="Hotel room">
             </div>
             <div class="menu_iconos">
                 <img src="/Img/Vector-cama.svg" alt="">
@@ -110,14 +126,14 @@
                     <h2>Minimal Duplex Room</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cupiditate aliquam ab magni ex deleniti!</p>
                     <div>
-                        <span class="precio">$345/Night     </span><span class="noche">        Book Now</span>
+                        <span class="precio">$345/Night     </span><a href="../Home/rooms-details.html" class="noche">    Book Now</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="rooms">
             <div class="slider">
-
+                <img class="rooms-flex__box__img" src="../../Img/rooms-1.jpg" alt="Hotel room">
             </div>
             <div class="menu_iconos">
                 <img src="/Img/Vector-cama.svg" alt="">
@@ -133,14 +149,14 @@
                     <h2>Minimal Duplex Room</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cupiditate aliquam ab magni ex deleniti!</p>
                     <div>
-                        <span class="precio">$345/Night     </span><span class="noche">        Book Now</span>
+                        <span class="precio">$345/Night     </span><a href="../Home/rooms-details.html" class="noche">    Book Now</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="rooms">
             <div class="slider">
-
+                <img class="rooms-flex__box__img" src="../../Img/rooms-1.jpg" alt="Hotel room">
             </div>
             <div class="menu_iconos">
                 <img src="/Img/Vector-cama.svg" alt="">
@@ -156,14 +172,14 @@
                     <h2>Minimal Duplex Room</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cupiditate aliquam ab magni ex deleniti!</p>
                     <div>
-                        <span class="precio">$345/Night     </span><span class="noche">        Book Now</span>
+                        <span class="precio">$345/Night     </span><a href="../Home/rooms-details.html" class="noche">    Book Now</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="rooms">
             <div class="slider">
-
+                <img class="rooms-flex__box__img" src="../../Img/rooms-1.jpg" alt="Hotel room">
             </div>
             <div class="menu_iconos">
                 <img src="/Img/Vector-cama.svg" alt="">
@@ -179,14 +195,16 @@
                     <h2>Minimal Duplex Room</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cupiditate aliquam ab magni ex deleniti!</p>
                     <div>
-                        <span class="precio">$345/Night     </span><span class="noche">        Book Now</span>
+                        <span class="precio">$345/Night     </span><a href="../Home/rooms-details.html" class="noche">    Book Now</a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </main>
     <footer>
         <div class="container">
+            <div class="container1">
             <div class="logo">
                 <img src="../../Img/Logo.png" alt="">
             </div>
@@ -199,6 +217,7 @@
                     <li><i class="fa-brands fa-linkedin" style="color: #777777;"></i></li>
                     <li><i class="fa-brands fa-square-youtube" style="color: #777777;"></i></li>
                 </ul>
+            </div>
             </div>
             <div class="services">
                 <h4>Services.</h4>
@@ -244,11 +263,14 @@
                     </div>
                 </div>
             </div>
-            <div class="copywrite">
-                <span>Copyright By@Example - 2020</span>
-                <span>Terms of use    |    Privacy Environmental Policy</span>
-            </div>
+            
+        </div>
+        <div class="copywrite">
+            <span>Copyright By@Example - 2020</span>
+            <span>Terms of use    |    Privacy Environmental Policy</span>
         </div>
     </footer>
+    <script src="/script.js"></script>
+    <script src="/swiper.js" type="module"></script>
 </body>
 </html>

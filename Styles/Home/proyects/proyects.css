@@ -1,6 +1,6 @@
 .proyects {
   height: 1020px;
-  width: 375px;
+  min-width: 375px;
   left: 0px;
   top: 0px;
   border-radius: 0px;
@@ -36,4 +36,16 @@
   letter-spacing: 0px;
   text-align: center;
   color: #999999;
+}
+
+@media only screen and (min-width: 1000px) {
+  .proyects {
+    height: 500px;
+  }
+  .proyects .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+  }
 }/*# sourceMappingURL=proyects.css.map */

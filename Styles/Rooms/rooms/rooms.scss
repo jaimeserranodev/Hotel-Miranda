@@ -1,7 +1,63 @@
 @import "../../variables";
+.home__rooms{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-left: 20px;
+    width: 100%;
+    background-color: #333333;
+    
 
+    h4{
+        margin-top: 75px;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 18px;
+        display: flex;
+        font-family: 'Archivo', sans-serif;
+        color: white;
+        letter-spacing: 2.8px;
+    }
+
+    h1{
+        font-family: 'Old Standard TT', serif;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 60px;
+        letter-spacing: -1.2px;
+        color: white;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    div{
+        height: 49px;
+        width: 186px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: right;
+        margin-right: 0;
+        margin-left: 42%;
+    }
+    span{
+        font-family: 'Archivo', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: -0.47999998927116394px;
+        text-align: left;
+        white-space: break-spaces;
+        color: #222222;
+        
+    }
+    #seccion{
+        color: #BEAD8E;
+    }
+
+}
 .rooms{
-    width: 375px;
+    width: 100%;
     margin-bottom: -60px;
     margin-top: 48px;
     display: flex;
@@ -14,6 +70,11 @@
         top: 3061px;
         border-radius: 0px;
         background-color: #E9E9E9;
+        img{
+            height: 218px;
+            width: 335px;
+            border-radius: 0px;
+        }
     }
     .menu_iconos{
         display: flex;
@@ -88,8 +149,31 @@
                 margin-top: -30px;
                 color: #BDBDBD;
                 white-space: break-spaces;
+                text-decoration: none;
             }
                 
         }
     }
 }
+
+
+@media only screen and (min-width: 1000px) {
+    .rooms_flex{
+    display: flex;
+    padding: 100px 5%;
+    max-width: 1400px;
+    margin: auto;
+    padding-bottom: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    .rooms{
+        width: 350px;
+        margin: 0 20px;
+        margin-bottom: 20px;
+    }
+    }
+}
+
+

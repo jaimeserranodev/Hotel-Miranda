@@ -10,44 +10,69 @@
     <link rel="stylesheet" href="../../Styles/styles.css">
     <link rel="stylesheet" href="/Styles/Header/header.css">
     <link rel="stylesheet" href="/Styles/Home/titulo/titulo.css">
-    <link rel="stylesheet" href="/Styles/Home/date/date.css">
-    <link rel="stylesheet" href="/Styles/Home/about/about.css">
-    <link rel="stylesheet" href="/Styles/Home/facilities/facilities.css">
-    <link rel="stylesheet" href="/Styles/Home/rooms/rooms.css">
-    <link rel="stylesheet" href="/Styles/Home/imagen/imagen.css">
-    <link rel="stylesheet" href="/Styles/Home/menu/menu.css">
-    <link rel="stylesheet" href="/Styles/Home/proyects/proyects.css">
-    <link rel="stylesheet" href="/Styles/Home/video/video.css">
-    <link rel="stylesheet" href="/Styles/Home/variables/variables.css">
+    <link rel="stylesheet" href="/Styles/Home/homeStyle/homeStyle.css">
+    <link rel="stylesheet" href="/Styles/variables.css">
     <link rel="stylesheet" href="/Styles/Footer/footer.css">
-    <link rel="stylesheet" href="Styles/">
-    <script src="/script.js"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+    <script>
+        var swiper = new Swiper(".swiper mySwiper", {
+            slidesPreView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
     <title>Home</title>
 </head>
 <body>
     
     <header class="header">
-        <div class="wrapper">
-            <div id="toggle-menu" class="toggle-menu">
-                <img src="/Img/hamburguesa.png" alt="">
+        <div class="header__mobile-flex">
+          <button class="header__hamburger btn-icon" id="hamburgerBtn">
+            <img src="../../Img/hamburguesa.png" alt="hamburger">
+          </button> 
+          <button class="header__hamburger d-none btn-icon" id="closeMenu">
+            <img src="../../Img/icon-x.png" alt="cross">
+          </button>
+          <div class="header__main">
+            <div class="header__main__flex">
+              <a href="home.html" class="header__main__anchor">
+                <div class="header__main__h">H</div>
+                <div class="header__main__title">
+                  <p class="header__main__title__hotel">HOTEL</p>
+                  <p class="header__main__title__miranda">MIRANDA</p>
+                </div>
+              </a>
             </div>
-            <div class="left">
-                <img src="/Img/Frame 47.svg" alt="">
-            </div>
-            <div class="right">
-                <img class="icon-pj" src="/Img/icono-pj.png" alt="">
-                <img class="icon-lupa" src="/Img/lupa.png" alt="">
-            </div>
+          </div>
+          <div class="header__btns">
+            <button class="header__btns__icon btn-icon">
+              <img src="../../Img/icono-person.svg" alt="user">           
+            </button>
+            <button class="header__btns__icon btn-icon">
+              <img src="../../Img/lupa.png" alt="magnifying-glass">
+            </button>
+          </div>
         </div>
-        <nav class="main-menu" id="main-menu">
-            <ul class="main-menu__item">
-                <li><a class="main-menu__link" href="/Pages/Home/about.html">About us</a></li>
-                <li><a class="main-menu__link" href="/Pages/Home/rooms.html">Rooms</a></li>
-                <li><a class="main-menu__link" href="/Pages/Home/offers.html">Offers</a></li>
-                <li><a class="main-menu__link" href="/Pages/Home/blog.html">Contact</a></li>
-            </ul>
+        <nav class="header__navbar d-none" id="navbar">
+          <ul>
+            <li><a class="header__navbar__item" href="about.html">About us</a></li>
+            <li><a class="header__navbar__item" href="rooms.html">Rooms</a></li>
+            <li><a class="header__navbar__item" href="offers.html">Offers</a></li>
+            <li><a class="header__navbar__item" href="contact.html">Contact</a></li>
+          </ul>
         </nav>
-    </header>
+      </header>
+      
     <main>
         <div class="home">
             <h4>THE ULTIMATE LUXURY EXPERIENCE</h4>
@@ -109,119 +134,212 @@
                 </div>
             </div>
         </div>
-        <div class="rooms">
-            <div>
-                <h4>ROOMS</h4>
-                <h1>Hand Picked Rooms</h1>
+        <section class="rooms">
+            <p class="rooms__rooms">ROOMS</p>
+            <h2 class="rooms__title">Hand Picked Rooms</h2>
+            <div class="rooms__rect">
+                <img src="../../Img/single-bed.svg" alt="">
+                <img src="../../Img/wifi.svg" alt="">
+                <img src="../../Img/Vector-coche.svg" alt="">
+                <img src="../../Img/Vector-nieve.svg" alt="">
+                <img src="../../Img/Vector-pesa.svg" alt="">
+                <img src="../../Img/Vector-tabaco.svg" alt="">
+                <img src="../../Img/Vector-coctel.svg" alt="">
             </div>
-            <div class="slider">
-
-            </div>
-            <div class="price">
-                <div >
-                    <h2>Minimal Duplex Room</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cupiditate aliquam ab magni ex deleniti!</p>
-                    <div>
-                        <span class="precio">$345</span><span class="noche">/Night</span>
-                    </div>
+            
+            <div class="swiper rooms__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide rooms__swiper__slide-1 rooms__swiper__slide"></div>
+                    <div class="swiper-slide rooms__swiper__slide-2 rooms__swiper__slide"></div>
+                    <div class="swiper-slide rooms__swiper__slide-3 rooms__swiper__slide"></div>
+                    <div class="swiper-slide rooms__swiper__slide-4 rooms__swiper__slide"></div>
+                </div>
+                <div class="rooms__swiper__nav-btn rooms__swiper__prev-btn">
+                    <img src="../../Img/arrow-left.svg" alt="">
+                </div>
+                <div class="rooms__swiper__nav-btn rooms__swiper__next-btn">
+                    <img src="../../Img/arrow-right.svg" alt="">
                 </div>
             </div>
+            
+            <div class="swiper rooms__swiper-desktop">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide rooms__swiper__slide-1 rooms__swiper__slide"></div>
+                    <div class="swiper-slide rooms__swiper__slide-2 rooms__swiper__slide"></div>
+                    <div class="swiper-slide rooms__swiper__slide-3 rooms__swiper__slide"></div>
+                    <div class="swiper-slide rooms__swiper__slide-4 rooms__swiper__slide"></div>
+                </div>
+                <div class="rooms__swiper__nav-btn rooms__swiper__prev-btn">
+                    <img src="../../Img/arrow-left.svg" alt="">
+                </div>
+                <div class="rooms__swiper__nav-btn rooms__swiper__next-btn">
+                    <img src="../../Img/Vector-flecha.svg" alt="">
+                </div>
+            </div>
+
+
+            <div class="rooms__offer">
+                <h3 class="rooms__offer__title">Minimal Duplex Room</h3>
+                <p class="rooms__offer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                <p class="rooms__offer__price">$345<span class="rooms__offer__price__small-txt">/Night</span></p>
+            </div>  
+            </section>
+
         </div>
         <div class="video">
-            <div class="container">
+            <div class="container__video">
                 <h3>INTRO VIDEO</h3>
                 <h1>Meet With Our Luxury Place.</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis et, modi reiciendis vitae quia consectetur, adipisci molestias doloribus quas perferendis cum, nihil voluptatibus ea eum aliquam neque fugiat molestiae magnam.</p>
                 <div class="v-video">
-                </div>
-                <button>BOOK NOW</button>
-            </div>
-        </div>
-        <div class="facilities">
-            <h4>FACILITIES</h4>
-            <h2>
-                Core Features
-            </h2>
-            <div class="container-cards">
-                <div class="card-1">
-                    <div class="container-img">
-                        <img class="icon-1" src="../../Img/icon 1.png" alt="">
-                        <img class="number-1" src="../../Img/01.png" alt="">
-                    </div>
-                    <h3>Have High Rating</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eveniet autem, fugit quasi dolor rerum!</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4K6Sh1tsAW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                    
                 </div>
                 
-            </div>
-            <div class="dots">
-                <span>.</span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+                    <button>BOOK NOW</button>
+                
+                
             </div>
         </div>
-        <div class="menu">
-            <img src="../../Img/icon 4.png" alt="">
-            <h4>MENU</h4>
-            <h1>Our Foods Menu</h1>
-            <div class="conteiner1">
-                <div class="imagenes">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+        <section class="facilities">
+            <p class="facilities__intro">FACILITIES</p>
+            <h2 class="facilities__title">Core Features</h2>
+        
+            <div class="swiper facilities__swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide facilities__swiper__slide">
+                  <p class="facilities__swiper__slide__number">01</p>
+                  <img class="facilities__swiper__slide__icon" src="../../Img/icon 1.png" alt="">
+                  <h3 class="facilities__swiper__slide__title">Have High Rating</h3>
+                  <p class="facilities__swiper__slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
                 </div>
-                <div class="text">
-                    <h3>Eggs & Bacon</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                    <h3>Tea or Coffee</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                    <h3>Chia Oatmeal</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                <div class="swiper-slide facilities__swiper__slide">
+                  <p class="facilities__swiper__slide__number">02</p>
+                  <img class="facilities__swiper__slide__icon" src="../../Img/clock.svg" alt="">
+                  <h3 class="facilities__swiper__slide__title">Quiet Hours</h3>
+                  <p class="facilities__swiper__slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
                 </div>
+                <div class="swiper-slide facilities__swiper__slide">
+                  <p class="facilities__swiper__slide__number">03</p>
+                  <img class="facilities__swiper__slide__icon" src="../../Img/ubicacion.svg" alt="">
+                  <h3 class="facilities__swiper__slide__title">Best Locations</h3>
+                  <p class="facilities__swiper__slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                </div>
+                <div class="swiper-slide facilities__swiper__slide">
+                  <p class="facilities__swiper__slide__number">04</p>
+                  <img class="facilities__swiper__slide__icon" src="../../Img/cancellation.svg" alt="">
+                  <h3 class="facilities__swiper__slide__title">Free Cancellation</h3>
+                  <p class="facilities__swiper__slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                </div>
+                <div class="swiper-slide facilities__swiper__slide">
+                  <p class="facilities__swiper__slide__number">05</p>
+                  <img class="facilities__swiper__slide__icon" src="../../Img/payment.svg" alt="">
+                  <h3 class="facilities__swiper__slide__title">Payment Options</h3>
+                  <p class="facilities__swiper__slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                </div>
+                <div class="swiper-slide facilities__swiper__slide">
+                  <p class="facilities__swiper__slide__number">06</p>
+                  <img class="facilities__swiper__slide__icon" src="../../Img/offer.svg" alt="">
+                  <h3 class="facilities__swiper__slide__title">Special Offers</h3>
+                  <p class="facilities__swiper__slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
-            <div class="btn">
-                <button class="btn-1"><</button>
-                <button class="btn-2">></button>
+            
+            <img class="facilities__bottom-img" src="../../Img/facilities-img.png" alt="donut">
+            
+          </section>
+        
+          <section class="menu-section">
+            <div class="menu-section__head">
+              <div>
+                <p class="menu-section__intro section-intro">MENU</p>
+                <h2 class="menu-section__title section-title">Our Foods Menu</h2>
+              </div>
             </div>
-            <!-- <div class="conteiner1">
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <h3></h3>
-                        <p></p>
-                    </div>
+            <div class="menu-section__menu">
+              <div class="menu-section__menu__first-col">
+                <div class="menu-section__menu__option">
+                  <img class="menu-section__menu__option__img" src="../../Img/bacon-eggs.jpg" alt="bacon and eggs">
+                  <div class="menu-section__menu__option__content">
+                    <h4 class="menu-section__menu__option__content__title">Eggs & Bacon</h4>
+                    <p class="menu-section__menu__option__content__text">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                  </div>
                 </div>
-                <div></div>
-                <div></div>
-            </div> -->
-        </div>
-        <div class="imagen">
-            <img class="img" src="../../Img/paisaje-casa-jardin-piscina-relajacion.jpg" alt="">
-        </div>
+                <div class="menu-section__menu__option">
+                  <img class="menu-section__menu__option__img" src="../../Img/coffee.jpg" alt="coffee or tea">
+                  <div class="menu-section__menu__option__content">
+                    <h4 class="menu-section__menu__option__content__title">Tea or Coffee</h4>
+                    <p class="menu-section__menu__option__content__text">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                  </div>
+                </div>
+                <div class="menu-section__menu__option">
+                  <img class="menu-section__menu__option__img" src="../../Img/chia-oatmeal.jpg" alt="Chia outmeal">
+                  <div class="menu-section__menu__option__content">
+                    <h4 class="menu-section__menu__option__content__title">Chia Oatmeal</h4>
+                    <p class="menu-section__menu__option__content__text">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-section__menu__second-col only-desktop"></div>
+              <div class="menu-section__menu__pagination">
+                <button class="menu-section__menu__pagination__prev">
+                  <img src="../../Img/arrow-left.svg" alt="">
+                </button>
+                <button class="menu-section__menu__pagination__next">
+                  <img src="../../Img/arrow-right.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </section>
+          
+          <div class="menu-section__bottom-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="menu-section__bottom-slider__img" src="../../Img/menu-1.jpg" alt="menu-1">
+              </div>
+              <div class="swiper-slide">
+                <img class="menu-section__bottom-slider__img" src="../../Img/menu-2.jpg" alt="menu-2">
+              </div>  
+              <div class="swiper-slide">
+                <img class="menu-section__bottom-slider__img" src="../../Img/menu-3.jpg" alt="menu-3">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
         <div class="proyects">
             <div class="container">
-                <img src="../../Img/icon 5.png" alt="">
-                <h1>84k+</h1>
-                <p>Projects are Completed</p>
-                <img src="../../Img/icon 6.png" alt="">
-                <h1>10M+
-                    </h1>
-                <p>Active Backers Around World</p>
-                <img src="../../Img/icon 7.png" alt="">
-                <h1>02k+
-                    </h1>
-                <p>Categories Served</p>
-                <img src="../../Img/icon 8.png" alt="">
-                <h1>100M+
-                    </h1>
-                <p>Idea Raised Funds</p>
+                <div>
+                    <img src="../../Img/icon 5.png" alt="">
+                    <h1>84k+</h1>
+                    <p>Projects are Completed</p>
+                </div>
+                <div>
+                    <img src="../../Img/icon 6.png" alt="">
+                    <h1>10M+
+                        </h1>
+                    <p>Active Backers Around World</p>
+                </div>
+                <div>
+                    <img src="../../Img/icon 7.png" alt="">
+                    <h1>02k+
+                        </h1>
+                    <p>Categories Served</p>
+                </div>
+                <div>
+                    <img src="../../Img/icon 8.png" alt="">
+                    <h1>100M+
+                        </h1>
+                    <p>Idea Raised Funds</p>
+                </div>
             </div>
         </div>
     </main>
     <footer>
         <div class="container">
+            <div class="container1">
             <div class="logo">
                 <img src="../../Img/Logo.png" alt="">
             </div>
@@ -234,6 +352,7 @@
                     <li><i class="fa-brands fa-linkedin" style="color: #777777;"></i></li>
                     <li><i class="fa-brands fa-square-youtube" style="color: #777777;"></i></li>
                 </ul>
+            </div>
             </div>
             <div class="services">
                 <h4>Services.</h4>
@@ -279,11 +398,14 @@
                     </div>
                 </div>
             </div>
-            <div class="copywrite">
-                <span>Copyright By@Example - 2020</span>
-                <span>Terms of use    |    Privacy Environmental Policy</span>
-            </div>
+            
+        </div>
+        <div class="copywrite">
+            <span>Copyright By@Example - 2020</span>
+            <span>Terms of use    |    Privacy Environmental Policy</span>
         </div>
     </footer>
+    <script src="/script.js"></script>
+    <script src="/swiper.js" type="module"></script>
 </body>
 </html>
