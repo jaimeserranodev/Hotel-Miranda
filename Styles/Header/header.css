@@ -17,8 +17,7 @@
   justify-content: flex-start;
   align-items: center;
   height: 100%;
-  margin-left: 10px;
-  padding: 0 20px;
+  padding-left: 20px;
 }
 .header__main {
   flex-basis: 50%;

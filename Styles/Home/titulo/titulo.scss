@@ -43,12 +43,20 @@
 
         .btn-take{
             @include button;
+            a{
+                color: white;
+                text-decoration: none;
+            }
         }
 
         .btn-learn{
             @include button;
             background-color: #333333;
             border: 2px solid rgba(255, 255, 255, 0.33);
+            a{
+                color: white;
+                text-decoration: none;
+            }
         }
     }
     

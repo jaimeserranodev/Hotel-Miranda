@@ -55,7 +55,13 @@
             @include button;
             margin-left: 20px;
             border: none;
+            
+            a{
+                color: white;
+                text-decoration: none;
             }
+        }
+            
     }
 
     .about-container-2{
