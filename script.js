@@ -1,3 +1,18 @@
+document.addEventListener('DOMContentLoaded', function() {
+  let ultimaPosicionScroll = window.scrollY;
+
+  window.addEventListener('scroll', function() {
+      const posicionActualScroll = window.scrollY;
+
+      if (posicionActualScroll > ultimaPosicionScroll) {
+          document.querySelector('.header').classList.add('ocultar-header');
+      } else {
+          document.querySelector('.header').classList.remove('ocultar-header');
+      }
+      ultimaPosicionScroll = posicionActualScroll;
+  });
+});
+
 // Handle hamburger button
 const hamburgerBtn = document.getElementById('hamburgerBtn');
 const closeMenu = document.getElementById('closeMenu');
@@ -14,6 +29,28 @@ closeMenu.addEventListener('click', function() {
   closeMenu.classList.add('d-none');
   hamburgerBtn.classList.remove('d-none');
 })
+
+
+
+
+let ultimaPosicionScroll = 0; // Variable global para almacenar la última posición de scroll.
+
+// Función para manejar el ocultamiento del header en scroll.
+function manejarOcultacionHeaderEnScroll() {
+  const posicionActualScroll = window.scrollY || document.documentElement.scrollTop;
+
+  // Asumiendo que el header para escritorio tiene una clase específica o se identifica de manera única.
+  const headerDesktop = document.querySelector('.header-wrapper__header-desktop') || document.querySelector('.header');
+
+  if (posicionActualScroll > ultimaPosicionScroll) {
+      headerDesktop.classList.add('ocultar-header');
+  } else {
+      headerDesktop.classList.remove('ocultar-header');
+  }
+  ultimaPosicionScroll = posicionActualScroll;
+}
+window.addEventListener('scroll', manejarOcultacionHeaderEnScroll);
+
 
 // Handle Desktop design
 const media = matchMedia('(min-width: 1000px)');
@@ -43,7 +80,7 @@ function changeView(e) {
     headerWrapper.appendChild(headerWrapperText);
     headerWrapper.appendChild(headerDesktop);
     document.body.insertAdjacentElement('afterbegin', headerWrapper);
-
+    
     // Home
     if (window.location.pathname.split('/').pop() === 'index.html' || window.location.pathname.split('/').pop() === '') {
 
@@ -213,3 +250,5 @@ function changeView(e) {
 }
 
 changeView();
+
+

@@ -1,5 +1,8 @@
 @import "../../Styles/variables";
-
+a{
+  color: white;
+  text-decoration: none;
+}
 .home__offers{
     display: flex;
     flex-direction: column;

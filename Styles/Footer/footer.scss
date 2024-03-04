@@ -1,11 +1,15 @@
+
+
 footer{
     background: url(../../Img/Rectángulo\ 2\ 1.png);
-    height: 1187px;
+    height: auto;
     min-width: 100%;
     margin-top: 60px;
     display: flex;
+    align-items: center;
     flex-direction: column;
     .container{
+        width: 100%;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -14,7 +18,7 @@ footer{
             display: flex;
             margin-left: -80px;
             img{
-                
+                margin-left: 40px;
                 margin-top: 32px;
             }
         }
@@ -197,7 +201,7 @@ footer{
     .copywrite{
             width: 100%;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-around; 
         }
     }
 }

@@ -1,13 +1,15 @@
 @charset "UTF-8";
 footer {
   background: url(../../Img/Rectángulo\ 2\ 1.png);
-  height: 1187px;
+  height: auto;
   min-width: 100%;
   margin-top: 60px;
   display: flex;
+  align-items: center;
   flex-direction: column;
 }
 footer .container {
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -18,6 +20,7 @@ footer .container .logo {
   margin-left: -80px;
 }
 footer .container .logo img {
+  margin-left: 40px;
   margin-top: 32px;
 }
 footer .container p {
